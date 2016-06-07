@@ -8,7 +8,8 @@ website dedicated to showcasing my own work, allowing easy ways to connect with 
 #####**This is a work in progress**
 
 I am a self-taught web developer still in the process of learning. This site will grow along with me, and will not be a finished
-product for some time. 
+product for some time. So please excuse broken links, poor loading times, missing CSS, etc. If you have any comments, feedback,
+suggestions or would like to contribute, please shoot me an email at [jmthornton4@gmail.com](mailto:jmthornton4@gmail.com).
 
 ---
 
