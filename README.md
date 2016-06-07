@@ -1,6 +1,6 @@
-##welcome to my personal website.
+##Hello there!.
 
-At the moment, the site is only an extension of work I am doing with [Free Code Camp](freecodecamp.com). In the future, this will be a personal
+This is the source code for my personal website at [raindeer44.github.io](raindeer44.github.io). At the moment, the site is only an extension of work I am doing with [Free Code Camp](freecodecamp.com). In the future, this will be a personal
 website dedicated to showcasing my own work, allowing easy ways to connect with me and a personal blog.
 
 ---
@@ -9,8 +9,6 @@ website dedicated to showcasing my own work, allowing easy ways to connect with 
 
 I am a self-taught web developer still in the process of learning. This site will grow along with me, and will not be a finished
 product for some time. 
-
-[raindeer44.github.io](raindeer44.github.io)
 
 ---
 
