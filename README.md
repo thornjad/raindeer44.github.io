@@ -21,8 +21,3 @@ merchantability or fitness for a particular purpose.
 You may use, copy, modify and redistribute all files included in this
 distribution, individually or in aggregate, subject to the terms and conditions
 of the MIT license.  See the file `LICENSE-MIT.txt` for details.
-
-In addition, you may -- at your option -- use, copy, modify and redistribute all
-images included in this distribution under the directory named `assets/images`
-according to the terms and conditions of the Creative Commons Attribution 4.0
-International License.  See the file `LICENSE-CC.txt` for details.
