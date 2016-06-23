@@ -1,6 +1,6 @@
 ##Hello there!
 
-This is the source code for my personal website at [raindeer44.github.io](raindeer44.github.io).
+This is the source code for my personal website at [jmthornton.net](jmthornton.net).
 At the moment, the site is only an extension of work I am doing with [Free Code Camp](freecodecamp.com).
 In the future, this will be a personal website dedicated to showcasing my
 own work, allowing easy ways to connect with me and a personal blog.
