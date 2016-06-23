@@ -24,4 +24,4 @@ merchantability or fitness for a particular purpose.
 
 You may use, copy, modify and redistribute all files included in this
 distribution, individually or in aggregate, subject to the terms and conditions
-of the MIT license.  See the file `LICENSE-MIT.txt` for details.
+of the MIT license.  See the file `LICENSE.txt` for details.
