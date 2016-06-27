@@ -20,3 +20,20 @@ body {
     border: none;
     border-radius: 3%;
 }
+
+.footer {
+    height: 60px;
+}
+
+.foot {
+    margin-top: 7%;
+}
+
+.foot a {
+    text-decoration: none;
+    color: #6b6f7a;
+}
+
+.foot a:hover {
+    color: #222;
+}
