@@ -36,13 +36,6 @@
             height: 100vh;
         }
 
-        .license-text {
-            display: inline-block;
-            font-size: 0.75em;
-            color: #9D9D91;
-            margin-left: 1em;
-        }
-
         .screen1 h1 {
             font-size: 3em;
             font-weight: bolder;
@@ -122,6 +115,8 @@
 </head>
 
 <body>
+    <?php include("includes/navigation.html"); ?>
+    <?php include("includes/footer.html"); ?>
     <div>
         <section class="screen1" id="home">
             <h1>
@@ -130,7 +125,6 @@
             <h3>
                     Web Developer / Software Engineer
             </h3>
-            <!--section class="footer"-->
             <footer class="footer">
                 <div class="container">
                     <div class="row foot">
@@ -159,23 +153,24 @@
                     </div>
                 </div>
             </footer>
-            <!--/section-->
         </section>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="pages/portfolio.html">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a href="pages/about.html">About</a>
                     </li>
+                    <!-- TODO blog section
                     <li>
-                        <a href="#">Connect</a>
+                        <a href="blog/home.html">Blog</a>
                     </li>
+                -->
                 </ul>
             </div>
         </nav>

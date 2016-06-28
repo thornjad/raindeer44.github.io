@@ -36,3 +36,10 @@ body {
 .foot a:hover {
     color: #222;
 }
+
+.license-text {
+    display: inline-block;
+    font-size: 0.75em;
+    color: #9D9D91;
+    margin-left: 1em;
+}
