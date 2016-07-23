@@ -1,21 +1,45 @@
 html {
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin: 0 auto;
-    background: black;
+    background: #E5E9EC;
     position: relative;
+    width: 100%;
 }
-
 body {
     font-family: "droid sans", sans-serif;
-    background: #222222;
-    color: #2D3034;
+    background: #E5E9EC;
+    color: #222;
     font-size: 2em;
     text-align: center;
 }
-
 .well {
-    background-color: rgba(175, 182, 192, .65);
-    color: black;
+    background-color: #E5E9EC;
+    color: #222;
     border: none;
     border-radius: 3%;
+}
+.footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 0.9em;
+}
+.foot {
+    padding-bottom: 10px;
+}
+.foot a {
+    text-decoration: none;
+    color: #6b6f7a;
+}
+.foot a:hover {
+    color: #222;
+}
+
+.license-text {
+    display: inline-block;
+    font-size: 0.75em;
+    color: #9D9D91;
+    margin-left: 1em;
 }

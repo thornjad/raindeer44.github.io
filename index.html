@@ -22,62 +22,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/assets/style/main.css" type="text/css" />
-    <link rel="stylesheet" href="/assets/style/button.css" type="text/css" />
-    <link rel="icon" type="image/ico" href="/assets/images/favicon.ico" />
-    <!--
-    self link: https://github.com/Raindeer44/Website/raw/master/pages/index.html -->
+    <link rel="stylesheet" href="assets/style/main.css" type="text/css" />
+    <link rel="stylesheet" href="assets/style/button.css" type="text/css" />
+    <link rel="stylesheet" href="assets/style/navigation.css" type="text/css" />
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
 
     <style>
         .screen1 {
             text-align: center;
             text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-            background: url(/assets/images/Buildings-into-Clouds-min.jpg) no-repeat center center fixed;
+            background: url(assets/images/Buildings-into-Clouds-min.jpg) no-repeat center center fixed;
             background-size: cover;
             padding-top: 30vh;
             height: 100vh;
-        }
-
-        .screen2 {
-            background: url(/assets/images/Macbook-phone-profile-min.jpg) no-repeat center center fixed;
-            background-size: cover;
-            padding-top: 15vh;
-            padding-bottom: 15vh;
-            min-height: 100vh;
-        }
-
-        .screen3 {
-            background: url(/assets/images/Swirl-design-grey-min.jpg) no-repeat center center fixed;
-            background-size: cover;
-            padding-top: 5vh;
-            padding-bottom: 10vh;
-            min-height: 100vh;
-        }
-
-        .screen4 {
-            background: url(/assets/images/gray-smooth-seamless-background-min.jpg) no-repeat center center fixed;
-            background-size: cover;
-            height: 100vh;
-        }
-
-        .license-text {
-            display: inline-block;
-            font-size: 0.75em;
-            color: #9D9D91;
-            margin-left: 1em;
-        }
-
-        .foot a {
-            text-decoration: none;
-            color: #9D9D91;
-        }
-
-        .foot a:hover {
-            color: #E5E6E8;
-        }
-
-        .foot {
-            margin-top: 7%;
         }
 
         .screen1 h1 {
@@ -150,181 +107,70 @@
         .email {
             text-align: center;
         }
-
-        .footer {
-            height: 60px;
-        }
-
-        .navbar-right {
-            margin-right: 8.333%;
-        }
     </style>
 
 </head>
 
 <body>
-    <div class="container-fluid">
+    <?php include("includes/navigation.html"); ?>
+    <?php include("includes/footer.html"); ?>
+    <div>
         <section class="screen1" id="home">
             <h1>
-        Jade Thornton
-    </h1>
+                    Jade Thornton
+            </h1>
             <h3>
-        Web Developer / Software Engineer
-    </h3>
+                    Web Developer / Software Engineer
+            </h3>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row foot">
+                        <div class="row">
+                            <div class="freespeech">
+                                <a href="https://github.com/Raindeer44/raindeer44.github.io">
+                            Proudly open source
+                        </a>
+                                <a href="https://voat.co">
+                                    <!--TODO put something fun here-->
+                                    |
+                                </a>
+                                <a href="https://github.com/Raindeer44/raindeer44.github.io">
+                            Hosted on GitHub <i class="fa fa-github"></i>
+                        </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- TODO make license all pretty -->
+                            <div class="license-text">
+                                <a href="LICENSE">
+                            Copyright (C) 2016 Jade Thornton
+                        </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </section>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-fixed-top navbar-default">
             <div class="container-fluid">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="./index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="pages/portfolio.html">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="pages/about.html">About</a>
                     </li>
+                    <!-- TODO blog section
                     <li>
-                        <a href="#contact">Connect</a>
+                        <a href="blog/home.html">Blog</a>
                     </li>
+                -->
                 </ul>
             </div>
         </nav>
-        <section class="screen2" id="about">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                    <div class="row">
-                        <div class="summary">
-                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                                <div class="well">
-                                    <p>
-                                        I am a self-taught web developer and software engineer based in the United States. I am currently a student at the University of Minnesota, working towards a Bachelor of Arts in Computer Science. I am passionate about using technology to solve problems
-                                        and to create products which people enjoy using.
-
-                                    </p>
-                                    <!-- maybe a dividing line here? next sec in well? -->
-                                    <p>
-                                        I am well versed in: HTML5, CSS3, JavaScript, jQuery, Bootstrap3, Java, Python
-                                    </p>
-                                    <p>
-                                        I am experienced with: Git, GitHub, Responsive Web Design
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picture">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                <img src="/assets/images/JadeMichael-min.jpg" class="img-responsive" alt="Image of Jade Thornton" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="screen3" id="portfolio">
-            <div class="section-title">
-                <div class="well">
-                    <h2>
-                    Portfolio
-                </h2>
-                </div>
-            </div>
-            <div class="projects">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-                        <!-- always make the div after the last project into a "see more" link to codepen.io -->
-                        <div class="row first-project-row well project-top-row">
-                            <div class="col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12">
-                                <div class="project1 project">
-                                    <a href="http://codepen.io/Raindeer44/pen/ZWgROq">
-                                        <div class="well">
-                                            <div class="project-thumb">
-                                                <div class="row">
-                                                    <img src="https://github.com/Raindeer44/Hosting/raw/master/Images/MCR-Page-Thumbnail.PNG" class="img-responsive" alt="My Chemical Romance Tribute Page" />
-                                                </div>
-                                            </div>
-                                            <div class="project-description">
-                                                <div class="row">
-                                                    <h4>
-                                        Tribute Page
-                                    </h4>
-                                                    <h5><em>
-                                        CSS and Bootstrap
-                                    </em></h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-
-                            </div>
-                            <div class="row second-project-row well project-top-row">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="project project2 see-more">
-                            <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
-                                <a href="/pages/allprojects.html">
-                                    <div class="well">
-                                        <div>
-                                            <h3 class="see-more-text">
-                                    See all projects
-                                </h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="screen4" id="contact">
-            <div class="container">
-                <div>
-                    <div class="section-title">
-                        <div class="well">
-                            <h2>
-                    Connect
-                </h2>
-                        </div>
-                    </div>
-                    <div class="contact">
-                        <div class="row">
-                            <div>
-                                <a href="mailto:jmthornton4@gmail.com">
-                                    <h3 class="email">
-                                jmthornton4@gmail.com
-                            </h3>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row buttons">
-                            <div>
-
-                                <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> GitHub</a>
-                                <a class="btn btn-default btn-lg" href="https://us.linkedin.com/in/jademichael" role="button"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
-                                <a class="btn btn-default btn-lg" href="http://codepen.io/Raindeer44/" role="button"><i class="fa fa-codepen"></i> CodePen</a>
-                                <a class="btn btn-default btn-lg" href="https://www.freecodecamp.com/raindeer44" role="button"><i class="fa fa-fire"></i> FreeCodeCamp</a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="footer">
-            <div class="row foot">
-                <div class="license-text">
-                    <a href="https://github.com/Raindeer44/Website/raw/master/LICENSE">
-                    Copyright (C) 2016 Jade Thornton
-                </a>
-                </div>
-            </div>
-        </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
