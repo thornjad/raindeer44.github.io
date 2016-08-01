@@ -1,5 +1,5 @@
 html {
-    /* max-width: 1600px; */
+    max-width: 1600px;
     margin: 0 auto;
     background: #E5E9EC;
     position: relative;
@@ -13,10 +13,9 @@ body {
     text-align: center;
 }
 .well {
-    background-color: #444C53;
+    background-color: #FFF;
     color: #0C0C0C;
     border: none;
-    border-radius: 3%;
 }
 .footer {
     display: block;
@@ -31,7 +30,7 @@ body {
 }
 .foot a {
     text-decoration: none;
-    color: #6b6f7a;
+    color: #B1ADBB;
 }
 .foot a:hover {
     color: #0C0C0C;
@@ -40,6 +39,6 @@ body {
 .license-text {
     display: inline-block;
     font-size: 0.75em;
-    color: #9D9D91;
+    color: #B1ADBB;
     margin-left: 1em;
 }

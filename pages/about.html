@@ -28,17 +28,35 @@
     <link rel="icon" type="image/ico" href="../assets/images/favicon.ico" />
 
     <style>
+        html,
         body {
             background-color: #346E91;
+            margin: auto;
+            height: 100%;
+        }
+
+        body {
+            background-size: 100%;
         }
 
         .about {
             margin: auto;
-            margin-top: 10%;
         }
 
-        .well {
-            background-color: #FFF;
+        .content {
+            padding-top: 20vh;
+        }
+
+        .top-buffer {
+            margin-top: 20px;
+        }
+
+        img {
+            border-radius: 3%;
+        }
+
+        .this-well {
+            height: 100%;
         }
     </style>
 </head>
@@ -64,68 +82,70 @@
             </ul>
         </div>
     </nav>
-    <section class="about">
+    <div class="content">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                <div class="row">
-                    <div class="picture">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                            <img src="assets/images/JadeMichael-min.jpg" class="img-responsive" alt="Image of Jade Thornton" />
-                        </div>
-                    </div>
-                    <div class="summary">
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                            <div class="well">
-                                <p>
-                                    I am a self-taught web developer and software engineer based in the United States. I am currently a student at the University of Minnesota, working towards a Bachelor of Arts in Computer Science. I am passionate about using technology to solve problems
-                                    and to create products which people enjoy using.
+            <div class="col-lg-8 col-lg-offset-2">
+                <section class="about">
+                    <div class="row col-wrap">
+                        <div class="well this-well">
+                            <div class="col-lg-3 right-side">
+                                <div class="picture">
+                                    <img src="../assets/images/JadeMichael-min.jpg" class="img-responsive image" alt="Image of Jade Thornton" />
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <div class="col-lg-9 left-side">
+                                    <div>
+                                        <p>
+                                            I am a self-taught web developer and software engineer based in the United States. I am currently a student at the University of Minnesota, working towards a Bachelor of Arts in Computer Science. I am passionate about using technology to solve problems
+                                            and to create products which people enjoy using.
 
-                                </p>
-                                <!-- maybe a dividing line here? next sec in well? -->
-                                <p>
-                                    I am well versed in: HTML5, CSS3, JavaScript, jQuery, Bootstrap3, Java, Python
-                                </p>
-                                <p>
-                                    I am experienced with: Git, GitHub, Responsive Web Design
-                                </p>
+                                        </p>
+                                        <!-- maybe a dividing line here? next sec in well? -->
+                                        <p>
+                                            I am well versed in: HTML5, CSS3, JavaScript, jQuery, Bootstrap3, Java, Python
+                                        </p>
+                                        <p>
+                                            I am experienced with: Git, GitHub, Responsive Web Design
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <section class="contact">
+                    <div class="row top-buffer">
+                        <div class="col-lg-12">
+                            <div class="well">
+                                <div class="contact">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-lg-offset-3">
+                                            <a href="mailto:jmthornton4@gmail.com">
+                                                <h3 class="email">
+                                                jmthornton4@gmail.com
+                                            </h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row buttons">
+                                        <div>
+
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> GitHub</a>
+                                            <a class="btn btn-default btn-lg" href="https://us.linkedin.com/in/jademichael" role="button"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                                            <a class="btn btn-default btn-lg" href="http://codepen.io/Raindeer44/" role="button"><i class="fa fa-codepen"></i> CodePen</a>
+                                            <a class="btn btn-default btn-lg" href="https://www.freecodecamp.com/raindeer44" role="button"><i class="fa fa-fire"></i> FreeCodeCamp</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
-    </section>
-    <section class="contact">
-        <div class="container">
-            <!--div class="row"-->
-                <!--div class="col-md-10 col-md-offset-1"-->
-                    <div class="well">
-                        <div class="contact">
-                            <div class="row">
-                                <div>
-                                    <a href="mailto:jmthornton4@gmail.com">
-                                        <h3 class="email">
-                            jmthornton4@gmail.com
-                        </h3>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row buttons">
-                                <div>
-
-                                    <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> GitHub</a>
-                                    <a class="btn btn-default btn-lg" href="https://us.linkedin.com/in/jademichael" role="button"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
-                                    <a class="btn btn-default btn-lg" href="http://codepen.io/Raindeer44/" role="button"><i class="fa fa-codepen"></i> CodePen</a>
-                                    <a class="btn btn-default btn-lg" href="https://www.freecodecamp.com/raindeer44" role="button"><i class="fa fa-fire"></i> FreeCodeCamp</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!--/div-->
-            <!--/div-->
-        </div>
-    </section>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="row foot">
@@ -154,6 +174,8 @@
             </div>
         </div>
     </footer>
+    <script>
+    </script>
 </body>
 
 </html>
