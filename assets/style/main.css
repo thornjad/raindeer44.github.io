@@ -8,13 +8,13 @@ html {
 body {
     font-family: "droid sans", sans-serif;
     background: #E5E9EC;
-    color: #222;
+    color: #0C0C0C;
     font-size: 2em;
     text-align: center;
 }
 .well {
-    background-color: #E5E9EC;
-    color: #222;
+    background-color: #444C53;
+    color: #0C0C0C;
     border: none;
     border-radius: 3%;
 }
@@ -34,7 +34,7 @@ body {
     color: #6b6f7a;
 }
 .foot a:hover {
-    color: #222;
+    color: #0C0C0C;
 }
 
 .license-text {
