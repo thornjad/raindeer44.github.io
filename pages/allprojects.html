@@ -21,11 +21,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/style/main.css" type="text/css" />
-    <link rel="stylesheet" href="assets/style/button.css" type="text/css" />
-    <link rel="stylesheet" href="assets/style/navigation.css" type="text/css" />
-    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/style/main.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/style/button.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/style/navigation.css" type="text/css" />
+    <link rel="icon" type="image/ico" href="../assets/images/favicon.ico" />
+    <style>
+        html,
+        body {
+            background-color: #B1ADBB;
+            margin: auto;
+            height: 100%;
+            color: #30373C;
+        }
 
+        a:hover {
+            color: #0C0C0C;
+        }
+
+        .project-tile:hover {
+            border: 1px solid #0C0C0C;
+            border-radius: 3%;
+        }
+
+        img:hover {
+            border-radius: 3%;
+        }
+
+        .freespeech a,
+        .license-text a {
+            color: #30373C;
+        }
+
+        .content {
+            padding-top: 10vh;
+        }
+    </style>
 </head>
 
 <body>
@@ -49,23 +79,56 @@
             </ul>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="title">
-            <div class="row">
-                <h1>All Projects</h1>
-            </div>
-        </div>
+    <div class="container-fluid content">
         <div class="projects">
-            <div class="row">
+            <div class="row" id="row1">
                 <!-- template for column:
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-4 col-md-4 project-tile">
+                    <a href="#">
+                        <div class="project-thumb">
+                            <div class="row">
+                                <img />
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <div class="row">
+                                <h4>Title</h4>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             -->
-                <div class="col-lg-6 col-md-6">
-                    MCR
+                <div class="col-lg-4 col-md-4 project-tile">
+                    <a href="https://codepen.io/Raindeer44/full/ZWgROq/">
+                        <div class="project-thumb">
+                            <div class="row">
+                                <img src="../assets/images/project-thumbnails/MCR-Page-Thumbnail.gif" class="img-responsive" alt="My Chemical Romance Tribute Page" />
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <div class="row">
+                                <h4>
+                                Tribute Page
+                            </h4>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    Portfolio
+                <div class="col-lg-4 col-md-4 project-tile">
+                    <a href="https://codepen.io/Raindeer44/full/rLBJzQ/">
+                        <div class="project-thumb">
+                            <div class="row">
+                                <img src="../assets/images/project-thumbnails/Portfolio-Page-Thumbnail.png" class="img-responsive" alt="Personal one-page portfolio" />
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <div class="row">
+                                <h4>
+                                Basic Portfolio
+                            </h4>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -76,22 +139,20 @@
             <div class="row foot">
                 <div class="row">
                     <div class="freespeech">
-                        <a href="#">
+                        <a href="https://github.com/Raindeer44/raindeer44.github.io">
                     Proudly open source
                 </a>
-                        <a href="#">
-                            <!--TODO put something fun here-->
-                            |
-                        </a>
-                        <a href="#">
+                        <a href="https://www.eff.org">
+                                |
+                            </a>
+                        <a href="https://pages.github.com">
                     Hosted on GitHub <i class="fa fa-github"></i>
                 </a>
                     </div>
                 </div>
                 <div class="row">
-                    <!-- TODO make license all pretty -->
                     <div class="license-text">
-                        <a href="LICENSE">
+                        <a href="../LICENSE">
                     Copyright (C) 2016 Jade Thornton
                 </a>
                     </div>
