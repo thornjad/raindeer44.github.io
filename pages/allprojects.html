@@ -25,7 +25,17 @@
     <link rel="stylesheet" href="../assets/style/button.css" type="text/css" />
     <link rel="stylesheet" href="../assets/style/navigation.css" type="text/css" />
     <link rel="icon" type="image/ico" href="../assets/images/favicon.ico" />
-
+    <style>
+        html,
+        body {
+            background-color: #B1ADBB;
+            margin: auto;
+            height: 100%;
+        }
+        .foot, .license-text {
+            color: #30373C;
+        }
+    </style>
 </head>
 
 <body>
@@ -50,80 +60,110 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <div class="title">
-            <div class="row">
-                <h1>All Projects</h1>
-            </div>
-        </div>
         <div class="projects">
-            <div class="row">
+            <div class="row" id="row1">
                 <!-- template for column:
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-4 col-md-4 project-tile">
+                    <a href="#">
+                        <div class="project-thumb">
+                            <div class="row">
+                                <img />
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <div class="row">
+                                <h4>Title</h4>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             -->
-                <div class="col-lg-6 col-md-6">
-                    MCR
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    Portfolio
+                <div class="col-lg-4 col-md-4 project-tile">
+                    <a href="https://codepen.io/Raindeer44/full/ZWgROq/">
+                        <div class="project-thumb">
+                            <div class="row">
+                                <img src="../assets/images/project-thumbnails/MCR-Page-Thumbnail.PNG" class="img-responsive" alt="My Chemical Romance Tribute Page" />
+                            </div>
+                        </div>
+                        <div class="project-description">
+                            <div class="row">
+                                <h4>
+                                Tribute Page
+                            </h4>
+                            </div>
+                    </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 project-tile">
+                        <a href="https://codepen.io/Raindeer44/full/rLBJzQ/">
+                            <div class="project-thumb">
+                                <div class="row">
+                                    <img src="../assets/images/project-thumbnails/Portfolio-Page-Thumbnail.png" class="img-responsive" alt="Personal one-page portfolio" />
+                                </div>
+                            </div>
+                            <div class="project-description">
+                                <div class="row">
+                                    <h4>
+                                Basic Portfolio
+                            </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row foot">
-                <div class="row">
-                    <div class="freespeech">
-                        <a href="#">
+        <footer class="footer">
+            <div class="container">
+                <div class="row foot">
+                    <div class="row">
+                        <div class="freespeech">
+                            <a href="https://github.com/Raindeer44/raindeer44.github.io">
                     Proudly open source
                 </a>
-                        <a href="#">
-                            <!--TODO put something fun here-->
-                            |
-                        </a>
-                        <a href="#">
+                            <a href="https://www.eff.org">
+                                |
+                            </a>
+                            <a href="https://pages.github.com">
                     Hosted on GitHub <i class="fa fa-github"></i>
                 </a>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <!-- TODO make license all pretty -->
-                    <div class="license-text">
-                        <a href="../LICENSE">
+                    <div class="row">
+                        <div class="license-text">
+                            <a href="../LICENSE">
                     Copyright (C) 2016 Jade Thornton
                 </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(a).attr("target", "_blank");
-            $(i).attr("aria-hidden", "true");
-        })
-    </script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(a).attr("target", "_blank");
+                $(i).attr("aria-hidden", "true");
+            })
+        </script>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-79769277-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+            ga('create', 'UA-79769277-1', 'auto');
+            ga('send', 'pageview');
+        </script>
 
 </body>
 
