@@ -14,7 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/." />
     <meta name="author" content="Jade Thornton" />
-    <meta name="description" content="A portfolio of work done by web developer Jade Thornton" />
+    <meta name="description" content="A portfolio of web developer Jade Thornton" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
     <meta name="google-site-verification" content="JUM1Dl9n9ic9xPMb03Nzf4NgW_-8PWZrJ4eJGC_PoYM" />
@@ -81,7 +81,6 @@
                                         <div class="well">
                                             <div class="project-thumb">
                                                 <div class="row">
-                                                    <!-- TODO switch this image link to local --->
                                                     <img src="../assets/images/project-thumbnails/MCR-Page-Thumbnail.gif" class="img-responsive" alt="My Chemical Romance Tribute Page" />
                                                 </div>
                                             </div>
@@ -99,31 +98,55 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12">
+                                <div class="project2 project">
+                                    <a href="https://codepen.io/Raindeer44/full/YWZEmx/">
+                                        <div class="well">
+                                            <div class="project-thumb">
+                                                <div class="row">
+                                                    <img src="../assets/images/project-thumbnails/Quote-Machine-Thumbnail.png" class="img-responsive" alt="Quote Machine app" />
+                                                </div>
+                                            </div>
+                                            <div class="project-description">
+                                                <div class="row">
+                                                    <h4>
+                                    Quote Machine
+                                </h4>
+                                                    <h5><em>
+                                    CSS and JavaScript
+                                </em></h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                             <div class="col-md-4">
 
                             </div>
-                            <div class="row second-project-row well project-top-row">
-                            </div>
+                        </div>
+                        <div class="row second-project-row well project-top-row">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="project project2 see-more">
-                            <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
-                                <a href="./allprojects.html">
-                                    <div class="well">
-                                        <div>
-                                            <h3 class="see-more-text">
+                </div>
+                <div class="row">
+                    <div class="see-more">
+                        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
+                            <a href="./allprojects.html">
+                                <div class="well">
+                                    <div>
+                                        <h3 class="see-more-text">
                                 See all projects
                             </h3>
-                                        </div>
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+    </section>
     </div>
     <footer class="footer">
         <div class="container">
@@ -157,8 +180,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
-            $(a).attr("target", "_blank");
-            $(i).attr("aria-hidden", "true");
+            $("i").attr("aria-hidden", "true");
         })
     </script>
     <script>
