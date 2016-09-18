@@ -48,92 +48,89 @@
             border-radius: 3%;
             border: 2px solid #444c53;
         }
-
-        .nav-portfolio-btn {
-            background-color: #346E91;
-            color: #040404;
-        }
-
-        #nav-portfolio-btn {
-            color: #ffffff;
-        }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="../index.html" class="nav-home-btn">Home</a>
-                </li>
-                <li>
-                    <a href="./about.html" class="nav-about-btn">About</a>
-                </li>
-                <li>
-                    <a href="./portfolio.html" class="nav-portfolio-btn" id="nav-portfolio-btn">Portfolio</a>
-                </li>
-                <li>
-                    <a href="https://medium.com/@jade.thornton" class="nav-blog-btn">Blog</a>
-                </li>
-            </ul>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html" id="brand">Jade Thornton</a>
         </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="#">Portfolio</a></li>
+            <li><a href="https://medium.com/@jade.thornton">Blog</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
-    <div class="content container-fluid">
-        <section class="screen3" id="portfolio">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-                    <!-- always make the div after the last project into a "see more" link to codepen.io -->
-                    <div class="row project-row well">
-                        <div class="col-lg-4">
-                            <div class="project1 project">
-                                <a href="http://codepen.io/Raindeer44/pen/ZWgROq">
-                                    <div class="project-thumb">
-                                        <div class="row">
-                                            <img src="../assets/images/project-thumbnails/MCR-Page-Thumbnail.png" class="img-responsive" alt="My Chemical Romance Tribute Page" />
+
+    <section class="screen3" id="portfolio">
+        <div class="container-fluid">
+            <div class="wrapper content">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                        <!-- always make the div after the last project into a "see more" link to codepen.io -->
+                        <div class="row project-row well">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="project1 project">
+                                    <a href="http://codepen.io/Raindeer44/pen/ZWgROq">
+                                        <div class="project-thumb">
+                                            <div class="row">
+                                                <img src="../assets/images/project-thumbnails/MCR-Page-Thumbnail.png" class="img-responsive" alt="My Chemical Romance Tribute Page" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="project-description">
-                                        <div class="row">
-                                            <h4>
+                                        <div class="project-description">
+                                            <div class="row">
+                                                <h4>
                                     Tribute Page
                                 </h4>
-                                            <h5><em>
+                                                <h5><em>
                                     CSS and Bootstrap
                                 </em></h5>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="project2 project">
-                                <a href="https://codepen.io/Raindeer44/full/YWZEmx/">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="project2 project">
+                                    <a href="https://codepen.io/Raindeer44/full/YWZEmx/">
 
-                                    <div class="project-thumb">
-                                        <div class="row">
-                                            <img src="../assets/images/project-thumbnails/Quote-Machine-Thumbnail.png" class="img-responsive" alt="Quote Machine app" />
+                                        <div class="project-thumb">
+                                            <div class="row">
+                                                <img src="../assets/images/project-thumbnails/Quote-Machine-Thumbnail.png" class="img-responsive" alt="Quote Machine app" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="project-description">
-                                        <div class="row">
-                                            <h4>
+                                        <div class="project-description">
+                                            <div class="row">
+                                                <h4>
                                     Quote Machine
                                 </h4>
-                                            <h5><em>
+                                                <h5><em>
                                     CSS and JavaScript
                                 </em></h5>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                </a>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+
                             </div>
                         </div>
-                        <div class="col-lg-4">
 
-                        </div>
                     </div>
-
                 </div>
             </div>
             <div class="row">
@@ -151,9 +148,8 @@
                     </div>
                 </div>
             </div>
-
+        </div>
     </section>
-    </div>
     <footer class="footer">
         <div class="container">
             <div class="row foot">
@@ -171,7 +167,6 @@
                     </div>
                 </div>
                 <div class="row">
-                    <!-- TODO make license all pretty -->
                     <div class="license-text">
                         <a href="../LICENSE">
                     Copyright (C) 2016 Jade Thornton

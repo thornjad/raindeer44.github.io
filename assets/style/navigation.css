@@ -65,6 +65,13 @@
 .navbar-right {
     margin-right: 8.333%;
 }
+#brand {
+    margin-left: 8.333%;
+}
+.navbar-inverse .navbar-nav> .active {
+    background-color: #346E91;
+    color: #ffffff;
+}
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu> li> a {
         color: #a5aaae;
