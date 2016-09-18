@@ -28,11 +28,17 @@
     <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
 
     <style>
-        html {
+        :root {
             max-width: none;
+            max-height: 100% !important;
+            background-color: #B1ADBB;
         }
 
-        .screen1 {
+        .main {
+            height: 100vh;
+        }
+
+        .screen {
             text-align: center;
             text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
             background: url(assets/images/Buildings-into-Clouds.jpg) no-repeat center center fixed;
@@ -41,80 +47,20 @@
             height: 100vh;
         }
 
-        .screen1 h1 {
+        .screen h1 {
             font-size: 3em;
             font-weight: bolder;
         }
 
-        .screen1 h3 {
+        .screen h3 {
             padding-top: 1%;
             font-weight: bold;
         }
 
-        .section-title h2 {
-            font-size: 2em;
-            font-weight: bolder;
-            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-        }
-
-        .section-title .well {
-            display: inline-block;
-            margin-top: 5vh;
-        }
-
-        .screen2 img {
-            border: 0.5em solid rgba(175, 182, 192, .90);
-            border-radius: 100%;
-        }
-
-        .project-top-row {
-            background-color: rgba(175, 182, 192, .5);
-        }
-
-        .project-description {
-            text-align: center;
-            color: #9D9D9D;
-        }
-
-        .project .well {
-            background-color: #222324;
-        }
-
-        .see-more {
-            text-align: center;
-            padding: auto;
-            height: 100%;
-        }
-
-        .see-more-text {
-            color: #9D9D9D;
-            font-weight: bold;
-        }
-
-        .email {
-            color: black;
-            text-shadow: -1px 0 rgb(175, 182, 192), 0 1px rgb(175, 182, 192), 1px 0 rgb(175, 182, 192), 0 -1px rgb(175, 182, 192);
-            font-weight: bold;
-            font-size: 1.5em;
-            margin-bottom: 2em;
-            margin-top: 8em;
-        }
-
-        .buttons {
-            text-align: center;
-        }
-
-        .section-title {
-            text-align: center;
-        }
-
-        .email {
-            text-align: center;
-        }
-
-        .foot .license-text a {
-            color: #444C53;
-            margin-bottom: -5px;
+        #license-text a {
+            color: #444C53 !important;
+            margin-bottom: 2vh;
+            clear: none;
         }
     </style>
 
@@ -123,9 +69,9 @@
 <body>
     <!-- animate name and title in after image loads, then animate
         navbar buttons in, then navbar background -->
-    <div>
-        <section class="screen1" id="home">
-            <div class="content-container">
+    <div class="main">
+        <section class="screen content-container" id="home">
+            <div>
                 <h1>
                     Jade Thornton
             </h1>
@@ -133,45 +79,45 @@
                     Web Developer / Software Engineer
             </h3>
             </div>
-            <footer class="footer">
-                <div class="container">
-                    <div class="row foot">
-                        <div class="row">
-                            <!-- TODO make license all pretty -->
-                            <div class="license-text">
-                                <a href="./LICENSE">
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row foot">
+                    <div class="row">
+                        <!-- TODO make license all pretty -->
+                        <div id="license-text">
+                            <a href="./LICENSE">
                             Copyright (C) 2016 Jade Thornton
                         </a>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </section>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+            </div>
+        </footer>
+    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                    <a class="navbar-brand" href="#" id="brand">Jade Thornton</a>
-                </div>
-                <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="pages/about.html">About</a></li>
-                        <li><a href="pages/about.html">Portfolio</a></li>
-                        <li><a href="https://medium.com/@jade.thornton">Blog</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+                <a class="navbar-brand" href="#" id="brand">Jade Thornton</a>
             </div>
-            <!-- /.container-fluid -->
-        </nav>
-    </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/about.html">Portfolio</a></li>
+                    <li><a href="https://medium.com/@jade.thornton">Blog</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
