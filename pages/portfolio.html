@@ -38,8 +38,15 @@
             padding-top: 10vh;
         }
 
-        .project .well {
-            border: 1px solid #444c53;
+        .project:hover {
+            border: 2px solid #444c53;
+            border-top: none;
+            border-radius: 3%;
+        }
+
+        img:hover {
+            border-radius: 3%;
+            border: 2px solid #444c53;
         }
 
         .nav-portfolio-btn {
@@ -72,84 +79,79 @@
             </ul>
         </div>
     </nav>
-    <div class="content">
+    <div class="content container-fluid">
         <section class="screen3" id="portfolio">
-            <div class="projects">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-                        <!-- always make the div after the last project into a "see more" link to codepen.io -->
-                        <div class="row first-project-row well project-top-row">
-                            <div class="col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12">
-                                <div class="project1 project">
-                                    <a href="http://codepen.io/Raindeer44/pen/ZWgROq">
-                                        <div class="well">
-                                            <div class="project-thumb">
-                                                <div class="row">
-                                                    <img src="../assets/images/project-thumbnails/MCR-Page-Thumbnail.png" class="img-responsive" alt="My Chemical Romance Tribute Page" />
-                                                </div>
-                                            </div>
-                                            <div class="project-description">
-                                                <div class="row">
-                                                    <h4>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                    <!-- always make the div after the last project into a "see more" link to codepen.io -->
+                    <div class="row project-row well">
+                        <div class="col-lg-4">
+                            <div class="project1 project">
+                                <a href="http://codepen.io/Raindeer44/pen/ZWgROq">
+                                    <div class="project-thumb">
+                                        <div class="row">
+                                            <img src="../assets/images/project-thumbnails/MCR-Page-Thumbnail.png" class="img-responsive" alt="My Chemical Romance Tribute Page" />
+                                        </div>
+                                    </div>
+                                    <div class="project-description">
+                                        <div class="row">
+                                            <h4>
                                     Tribute Page
                                 </h4>
-                                                    <h5><em>
+                                            <h5><em>
                                     CSS and Bootstrap
                                 </em></h5>
-                                                </div>
-                                            </div>
                                         </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-10 col-sm-offset-1 col-xs-12">
-                                <div class="project2 project">
-                                    <a href="https://codepen.io/Raindeer44/full/YWZEmx/">
-                                        <div class="well">
-                                            <div class="project-thumb">
-                                                <div class="row">
-                                                    <img src="../assets/images/project-thumbnails/Quote-Machine-Thumbnail.png" class="img-responsive" alt="Quote Machine app" />
-                                                </div>
-                                            </div>
-                                            <div class="project-description">
-                                                <div class="row">
-                                                    <h4>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="project2 project">
+                                <a href="https://codepen.io/Raindeer44/full/YWZEmx/">
+
+                                    <div class="project-thumb">
+                                        <div class="row">
+                                            <img src="../assets/images/project-thumbnails/Quote-Machine-Thumbnail.png" class="img-responsive" alt="Quote Machine app" />
+                                        </div>
+                                    </div>
+                                    <div class="project-description">
+                                        <div class="row">
+                                            <h4>
                                     Quote Machine
                                 </h4>
-                                                    <h5><em>
+                                            <h5><em>
                                     CSS and JavaScript
                                 </em></h5>
-                                                </div>
-                                            </div>
                                         </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
+                                    </div>
 
+                                </a>
                             </div>
                         </div>
-                        <div class="row second-project-row well project-top-row">
+                        <div class="col-lg-4">
+
                         </div>
                     </div>
+
                 </div>
-                <div class="row">
-                    <div class="see-more">
-                        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
-                            <a href="./allprojects.html">
-                                <div class="well">
-                                    <div>
-                                        <h3 class="see-more-text">
+            </div>
+            <div class="row">
+                <div class="see-more">
+                    <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
+                        <a href="./allprojects.html">
+                            <div class="well">
+                                <div>
+                                    <h3 class="see-more-text">
                                 See all projects
                             </h3>
-                                    </div>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-    </div>
+
     </section>
     </div>
     <footer class="footer">
