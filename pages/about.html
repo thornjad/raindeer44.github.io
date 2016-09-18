@@ -53,11 +53,10 @@
 
         img {
             border-radius: 3%;
-            border: 20px solid #346E91;
-            margin: -40px;
         }
 
         .summary {
+            text-align: left;
             vertical-align: middle;
         }
 
@@ -76,6 +75,11 @@
 
         #nav-about-btn {
             color: #ffffff;
+        }
+
+        .summary div p:last-child {
+            text-align: center;
+            margin-top: 3vh;
         }
     </style>
 </head>
@@ -105,28 +109,19 @@
                 <section class="about">
                     <div class="well this-well">
                         <div class="row col-wrap">
-                            <div class="col-lg-3 right-side">
+                            <div class="col-lg-3">
                                 <div class="picture">
                                     <img src="../assets/images/JadeMichael-min.jpg" class="img-responsive image" alt="Image of Jade Thornton" />
                                 </div>
                             </div>
                             <div class="summary">
-                                <div class="col-lg-9 left-side">
-                                    <div>
-                                        <p>
-                                            I am a self-taught web developer and software engineer based in the United States. I am currently a student at the University of Minnesota, working towards a Bachelor of Arts in Computer Science. I am passionate about using technology to solve problems
-                                            and to create products which people enjoy using.
-
-                                        </p>
-                                        <!-- maybe a dividing line here? next sec in well? -->
-                                        <p>
-                                            I am well versed in: HTML5, CSS3, JavaScript, jQuery, Bootstrap3, Java, Python
-                                        </p>
-                                        <p>
-                                            I am experienced with: Git, GitHub, Responsive Web Design
-                                        </p>
-                                    </div>
-                                    <!-- TODO: add link to page about the website, pull from README.md -->
+                                <div class="col-lg-9">
+                                    <p>
+                                        I am a self-taught web developer and university-taught software creator. I'm a student at the University of Minnesota, working towards a Bachelor of Arts in Computer Science. I am passionate about using technology to solve problems and to create products which people enjoy using. My current roles include developing software and maintaining websites for the Humphrey School of Public Affairs, and I occasionally fly quadcopters in my free time.
+                                    </p>
+                                    <p>
+                                        HTML5 | Css3 | Java | Python | Git | JavaScript | jQuery | Moodle | Responsive Web Design | Clojure
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +148,9 @@
                                             <a class="btn btn-default btn-lg" href="https://us.linkedin.com/in/jademichael" role="button"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
                                             <a class="btn btn-default btn-lg" href="http://codepen.io/Raindeer44/" role="button"><i class="fa fa-codepen"></i> CodePen</a>
                                             <a class="btn btn-default btn-lg" href="https://www.freecodecamp.com/raindeer44" role="button"><i class="fa fa-fire"></i> FreeCodeCamp</a>
-
+                                            <a class="btn btn-default btn-lg about-btn" href="#" role="button">
+                                                About This Website
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
