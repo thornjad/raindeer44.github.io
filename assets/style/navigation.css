@@ -63,11 +63,25 @@
     color: #ffffff;
 }
 .navbar-right {
-    margin-right: 8.333%;
+    margin-right: 8.333vw;
 }
 #brand {
-    margin-left: 8.333%;
+    margin-left: 8.333vw !important;
 }
+
+.navbar-brand img, .navbar-brand span {
+    display: inline-block;
+}
+
+.navbar-brand span {
+    margin-left: 1vw;
+}
+
+.navbar-brand img {
+    max-height: 1.8em;
+    margin-top: -0.6vh;
+}
+
 .navbar-inverse .navbar-nav> .active {
     background-color: #346E91;
     color: #ffffff;

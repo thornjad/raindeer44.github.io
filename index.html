@@ -34,12 +34,13 @@
             background-color: #B1ADBB;
         }
 
-        .screen {
-            text-align: center;
+        .content {
+            text-align: right;
             text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-            background: url(assets/images/Buildings-into-Clouds.jpg) no-repeat center center fixed;
+            background: url(assets/images/background-rc5.jpg) no-repeat center center fixed;
             background-size: cover;
-            padding-top: 30vh;
+            padding-top: 54vh;
+            padding-right: 18vw;
             height: 100vh;
         }
 
@@ -47,14 +48,18 @@
             padding-bottom: 0 !important;
         }
 
-        .screen h1 {
+        .content h1 {
             font-size: 3em;
             font-weight: bolder;
         }
 
-        .screen h3 {
+        .content h3 {
             padding-top: 1%;
             font-weight: bold;
+        }
+
+        footer {
+            background-color: #B1ADBB;
         }
 
         #license-text a {
@@ -67,17 +72,40 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand img-responsive" href="#" id="brand"><img src="assets/images/navBrand.jpg" /><span> JMThornton</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/portfolio.html">Portfolio</a></li>
+                    <!--li><a href="https://medium.com/@jade.thornton">Blog</a></li-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     <!-- animate name and title in after image loads, then animate
         navbar buttons in, then navbar background -->
     <div class="main">
-        <section class="screen content-container" id="home">
+        <section class="content content-container" id="home">
             <div>
                 <h1>
-                    Jade Thornton
+                    JMThornton
             </h1>
-                <h3>
-                    Web Developer / Software Engineer
-            </h3>
+                <h2>
+                    Web Development
+            </h2>
             </div>
         </section>
         <footer class="footer">
@@ -95,30 +123,6 @@
             </div>
         </footer>
     </div>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand" href="#" id="brand">Jade Thornton</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                    <li><a href="pages/portfolio.html">Portfolio</a></li>
-                    <!--li><a href="https://medium.com/@jade.thornton">Blog</a></li-->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
