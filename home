@@ -86,8 +86,10 @@
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                    <li><a href="pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="pages/about">About</a></li>
+                    <li><a href="pages/portfolio">Portfolio</a></li>
+
+                    <!--li><a href="#">Features</a></li-->
                     <!--li><a href="https://medium.com/@jade.thornton">Blog</a></li-->
                 </ul>
             </div>
