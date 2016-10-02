@@ -38,7 +38,6 @@
         .content {
             text-align: right;
             right: 0;
-            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
             background-image: url("assets/images/background.svg");
             background-position: calc(50% - 12vw) 50%;
             background-repeat: no-repeat;
@@ -71,6 +70,11 @@
             color: #1c1c1c;
             background-color: inherit;
         }
+
+        .btn-default:hover {
+            background-color: #346E91;
+            color: white;
+        }
     </style>
 
 </head>
@@ -88,8 +92,9 @@
                     Web Development
                 </h2>
             <div class="buttons btn-group-vertical" role="group" aria-label="navigation group" id="buttons">
-                <a type="button" role="button" class="btn btn-default btn-lg" href="pages/about">Meet</a>
-                <a type="button"role="button" class="btn btn-default btn-lg" href="pages/about">Contact</a>
+                <a type="button" role="button" class="btn btn-default btn-lg" href="pages/meet">Meet</a>
+                <a type="button"role="button" class="btn btn-default btn-lg" href="pages/projects">Projects</a>
+                <a type="button"role="button" class="btn btn-default btn-lg" href="#" disabled="disabled">Contact</a>
             </div>
             </div>
         </section>
