@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Portfolio | Jade Thornton</title>
+    <title>Projects | JMThornton Web Development</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="copyright" content=" Copyright (C) 2016 Jade Thornton
     This program is free software: you can redistribute it and/or modify
@@ -14,7 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see http://www.gnu.org/licenses/." />
     <meta name="author" content="Jade Thornton" />
-    <meta name="description" content="A portfolio of web developer Jade Thornton" />
+    <meta name="description" content="Home of JMThornton Web Development" />
     <meta name="robots" content="home, follow" />
     <meta name="googlebot" content="home, follow" />
     <meta name="google-site-verification" content="JUM1Dl9n9ic9xPMb03Nzf4NgW_-8PWZrJ4eJGC_PoYM" />
