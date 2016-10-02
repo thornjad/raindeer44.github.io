@@ -45,7 +45,7 @@
         }
 
         .content {
-            padding-top: 20vh;
+            padding-top: 13vh;
         }
 
         .top-buffer {
@@ -60,26 +60,20 @@
             text-align: left;
             vertical-align: middle;
         }
-
         .summary h2 {
             line-height: 1.4em;
         }
-
-        .this-well {
-            height: 100%;
+        .summary h1, .indent {
+            margin-left: 4vw;
         }
-
-        .email {
-            padding-bottom: 20px;
-            color: #346E91;
+        .contact-btn {
+            position: relative;
+            margin: auto;
+            margin-top: 1vh;
         }
-
-        .nav-about-btn {
-            background-color: #346E91;
-        }
-
-        #nav-about-btn {
-            color: #ffffff;
+        .buttons a {
+            margin-top: 0.8vh;
+            margin-bottom: 0.8vh;
         }
     </style>
 </head>
@@ -118,6 +112,7 @@
                             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
                                 <div class="picture">
                                     <img src="../assets/images/JadeMichael.jpg" class="img-responsive image" alt="Image of Jade Thornton" />
+                                    <a class="btn btn-default btn-lg contact-btn" role="button" href="contact">Contact Me</a>
                                 </div>
                             </div>
                             <div class="summary">
@@ -126,7 +121,7 @@
                                         Hi, I'm Jade
                                     </h1>
                                     <h2>
-                                        I’m a web developer and software creator. My passion is using technology to bring information to users in an attractive and enjoyable way. I am currently developing software and maintaining websites for the Humphrey School of Public Affairs at the University of Minnesota.
+                                        <span class="indent"></span>I’m a web developer and software creator. My passion is using technology to bring information to users in an attractive and enjoyable way. I am currently developing software and maintaining websites for the Humphrey School of Public Affairs at the University of Minnesota.
                                     </h2>
                                 </div>
                             </div>
@@ -140,18 +135,18 @@
                                 <div class="techs">
                                     <div class="row buttons">
                                         <div>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> Bootstrap</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> CSS3</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> Git</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> HTML5</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> Java</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> JavaScript</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> jQuery</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> Linux</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> Moodle</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> Multirotor Flight</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> Python</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> Ruby</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Bootstrap</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">CSS3</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Git</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">HTML5</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Java</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">JavaScript</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">jQuery</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Linux</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Moodle</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Multirotor Flight</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Python</a>
+                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Ruby</a>
                                         </div>
                                     </div>
                                 </div>
