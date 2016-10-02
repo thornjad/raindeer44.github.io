@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>About | Jade Thornton</title>
+    <title>Meet | JMThornton Web Development</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="copyright" content=" Copyright (C) 2016 Jade Thornton
     This program is free software: you can redistribute it and/or modify
@@ -60,7 +60,7 @@
             text-align: left;
             vertical-align: middle;
         }
-        .summary h2 {
+        .summary h3 {
             line-height: 1.4em;
         }
         .summary h1, .indent {
@@ -113,17 +113,21 @@
                             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-7">
                                 <div class="picture">
                                     <img src="../assets/images/JadeMichael.jpg" class="img-responsive image" alt="Image of Jade Thornton" />
-                                    <a class="btn btn-default btn-lg contact-btn" role="button" href="contact">Contact Me</a>
+
                                 </div>
                             </div>
                             <div class="summary">
-                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                                <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
                                     <h1>
                                         Hi, I'm Jade
                                     </h1>
-                                    <h2>
+                                    <h3>
                                         <span class="indent"></span>I’m a web developer and software creator. My passion is using technology to bring information to users in an attractive and enjoyable way. I am currently developing software and maintaining websites for the Humphrey School of Public Affairs at the University of Minnesota.
-                                    </h2>
+                                    </h3>
+                                    <span class="indent"></span><a class="btn btn-default btn-lg contact-btn" role="button" href="contact">Contact Me</a>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-6">
+                                    <a href=""><i href=""></i></a>
                                 </div>
                             </div>
                         </div>
@@ -136,18 +140,18 @@
                                 <div class="techs">
                                     <div class="row buttons">
                                         <div>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Bootstrap</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">CSS3</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Git</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">HTML5</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Java</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">JavaScript</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">jQuery</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Linux</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Moodle</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Multirotor Flight</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Python</a>
-                                            <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button">Ruby</a>
+                                            <a class="btn btn-default btn-lg" href="project-examples/bootstrap" role="button">Bootstrap</a>
+                                            <a class="btn btn-default btn-lg" href="project-examples/css" role="button">CSS3</a>
+                                            <a class="btn btn-default btn-lg" href="project-examples/git" role="button">Git</a>
+                                            <a class="btn btn-default btn-lg" href="project-examples/html" role="button">HTML5</a>
+                                            <a class="btn btn-default btn-lg" href="project-examples/java" role="button">Java</a>
+                                            <a class="btn btn-default btn-lg" href="project-examples/javascript" role="button">JavaScript</a>
+                                            <a class="btn btn-default btn-lg" href="project-examples/jquery" role="button">jQuery</a>
+                                            <a class="btn btn-default btn-lg" href="hproject-examples/linux" role="button">Linux</a>
+                                            <a class="btn btn-default btn-lg" href="project-examples/moodle" role="button">Moodle</a>
+                                            <a class="btn btn-default btn-lg" href="project-examples/multirotor-flight" role="button">Multirotor Flight</a>
+                                            <a class="btn btn-default btn-lg" href="project-examples/python" role="button">Python</a>
+                                            <a class="btn btn-default btn-lg" href="project-examples/ruby" role="button">Ruby</a>
                                         </div>
                                     </div>
                                 </div>
