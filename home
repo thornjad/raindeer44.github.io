@@ -15,8 +15,8 @@
     along with this program.  If not, see http://www.gnu.org/licenses/." />
     <meta name="author" content="Jade Thornton" />
     <meta name="description" content="A portfolio of web developer Jade Thornton" />
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
+    <meta name="robots" content="home, follow" />
+    <meta name="googlebot" content="home, follow" />
     <meta name="google-site-verification" content="JUM1Dl9n9ic9xPMb03Nzf4NgW_-8PWZrJ4eJGC_PoYM" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="assets/style/main.css" type="text/css" />
     <link rel="stylesheet" href="assets/style/button.css" type="text/css" />
     <link rel="stylesheet" href="assets/style/navigation.css" type="text/css" />
-    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="apple-itouch-icon" href="assets/images/favicon.ico" />
 
     <style>
         :root {
@@ -36,94 +37,62 @@
 
         .content {
             text-align: right;
+            right: 0;
             text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-            background: url(assets/images/background-rc5.jpg) no-repeat center center fixed;
+            background-image: url("assets/images/background.svg");
+            background-position: calc(50% - 12vw) 50%;
+            background-repeat: no-repeat;
             background-size: cover;
-            padding-top: 54vh;
-            padding-right: 18vw;
+            background-color: inherit;
+            padding-top: 28vh;
+            padding-right: 16vw;
             height: 100vh;
         }
 
-        #home {
-            padding-bottom: 0 !important;
-        }
-
-        .content h1 {
+        #main {
             font-size: 3em;
             font-weight: bolder;
         }
 
-        .content h3 {
-            padding-top: 1%;
+        #secondary {
+            padding-top: 1vh;
             font-weight: bold;
         }
 
-        footer {
-            background-color: #B1ADBB;
+        #buttons {
+            padding-top: 1vh;
         }
 
-        #license-text a {
-            color: #444C53 !important;
+        .btn-default {
+            margin-top: 2vh;
             margin-bottom: 2vh;
-            clear: both;
+            padding: 2.1vh 3vw;
+            border: 2px solid #1c1c1c;
+            color: #1c1c1c;
+            background-color: inherit;
         }
     </style>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-                <a class="navbar-brand img-responsive" href="#" id="brand"><img src="assets/images/navBrand.jpg" /><span> JMThornton</span></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="pages/about">About</a></li>
-                    <li><a href="pages/portfolio">Portfolio</a></li>
-
-                    <!--li><a href="#">Features</a></li-->
-                    <!--li><a href="https://medium.com/@jade.thornton">Blog</a></li-->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <!-- animate name and title in after image loads, then animate
+    <!-- TODO animate name and title in after image loads, then animate
         navbar buttons in, then navbar background -->
     <div class="main">
-        <section class="content content-container" id="home">
+        <section class="content content-container">
             <div>
-                <h1>
+                <h1 id="main">
                     JMThornton
-            </h1>
-                <h2>
+                </h1>
+                <h2 id="secondary">
                     Web Development
-            </h2>
+                </h2>
+            <div class="buttons btn-group-vertical" role="group" aria-label="navigation group" id="buttons">
+                <a type="button" role="button" class="btn btn-default btn-lg" href="pages/about">Meet</a>
+                <a type="button"role="button" class="btn btn-default btn-lg" href="pages/about">Contact</a>
+            </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container">
-                <div class="row foot">
-                    <div class="row">
-                        <!-- TODO make license all pretty -->
-                        <div id="license-text">
-                            <a href="./LICENSE">
-                            Copyright (C) 2016 Jade Thornton
-                        </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -430,10 +399,10 @@
                         decode: function(a) {
                             var b = "";
                             for (i = 0, c = a.length; i < c; i += 4) {
-                                var d = this.chars.indexOf(a.charAt(i)),
-                                    e = this.chars.indexOf(a.charAt(i + 1)),
-                                    f = this.chars.indexOf(a.charAt(i + 2)),
-                                    g = this.chars.indexOf(a.charAt(i + 3));
+                                var d = this.chars.homeOf(a.charAt(i)),
+                                    e = this.chars.homeOf(a.charAt(i + 1)),
+                                    f = this.chars.homeOf(a.charAt(i + 2)),
+                                    g = this.chars.homeOf(a.charAt(i + 3));
                                 b += String.fromCharCode(d << 2 | e >> 4), -1 != f && (b += String.fromCharCode((15 & e) << 4 | f >> 2)), -1 != g && (b += String.fromCharCode((3 & f) << 6 | g))
                             }
                             return b
@@ -557,12 +526,12 @@
                             if (-1 == b) {
                                 for (g = Array(0);;) {
                                     for (h = Array(g.length + 1), f = 0; f < g.length; f++) h[f + 1] = g[f];
-                                    if (h[0] = parseInt(a, 10), g = h, e = a.indexOf(",", 0), 1 > e) break;
+                                    if (h[0] = parseInt(a, 10), g = h, e = a.homeOf(",", 0), 1 > e) break;
                                     if (a = a.substring(e + 1), 0 == a.length) break
                                 }
                                 return g.length < c ? (h = Array(c), C(h, g), h) : g
                             }
-                            for (g = w(0, b * j, 0), f = 0; j > f && (e = d.indexOf(a.substring(f, f + 1), 0), 36 >= b && e >= 36 && (e -= 26), !(e >= b || 0 > e)); f++) H(g, b), E(g, e);
+                            for (g = w(0, b * j, 0), f = 0; j > f && (e = d.homeOf(a.substring(f, f + 1), 0), 36 >= b && e >= 36 && (e -= 26), !(e >= b || 0 > e)); f++) H(g, b), E(g, e);
                             for (j = g.length; j > 0 && !g[j - 1]; j--);
                             for (j = c > j + 1 ? c : j + 1, h = Array(j), i = j < g.length ? j : g.length, f = 0; i > f; f++) h[f] = g[f];
                             for (; j > f; f++) h[f] = 0;
