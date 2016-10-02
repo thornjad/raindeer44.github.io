@@ -73,7 +73,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <a class="navbar-brand img-responsive" href="../home" id="brand"><img src="../assets/images/icon.svg" /><span> JMThornton</span></a>
+                <a class="navbar-brand img-responsive" href="../../home" id="brand"><img src="../../assets/images/icon.svg" /><span> JMThornton</span></a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -112,7 +112,7 @@
                         <a href="https://codepen.io/Raindeer44/full/ZWgROq/">
                             <div class="project-thumb">
                                 <div class="row">
-                                    <img src="../assets/images/project-thumbnails/MCR-Page-Thumbnail.png" class="img-responsive" alt="My Chemical Romance Tribute Page" />
+                                    <img src="../../assets/images/project-thumbnails/MCR-Page-Thumbnail.png" class="img-responsive" alt="My Chemical Romance Tribute Page" />
                                 </div>
                             </div>
                             <div class="project-description">
@@ -128,7 +128,7 @@
                         <a href="https://codepen.io/Raindeer44/full/rLBJzQ/">
                             <div class="project-thumb">
                                 <div class="row">
-                                    <img src="../assets/images/project-thumbnails/Portfolio-Page-Thumbnail.png" class="img-responsive" alt="Personal one-page portfolio" />
+                                    <img src="../../assets/images/project-thumbnails/Portfolio-Page-Thumbnail.png" class="img-responsive" alt="Personal one-page portfolio" />
                                 </div>
                             </div>
                             <div class="project-description">
@@ -144,7 +144,7 @@
                         <a href="https://codepen.io/Raindeer44/full/YWZEmx/">
                             <div class="project-thumb">
                                 <div class="row">
-                                    <img src="../assets/images/project-thumbnails/Quote-Machine-Thumbnail.png" class="img-responsive" alt="A random quote generator" />
+                                    <img src="../../assets/images/project-thumbnails/Quote-Machine-Thumbnail.png" class="img-responsive" alt="A random quote generator" />
                                 </div>
                             </div>
                             <div class="project-description">
@@ -162,7 +162,7 @@
                         <a href="https://github.com/Raindeer44/sas-timer">
                             <div class="project-thumb">
                                 <div class="row">
-                                    <img src="../assets/images/project-thumbnails/SAS-Thumbnail.png" class="img-responsive" alt="A pomodoro timer shell script" />
+                                    <img src="../../assets/images/project-thumbnails/SAS-Thumbnail.png" class="img-responsive" alt="A pomodoro timer shell script" />
                                 </div>
                             </div>
                             <div class="project-description">
@@ -178,7 +178,7 @@
                         <a href="project-not-found.html">
                             <div class="project-thumb">
                                 <div class="row">
-                                    <img src="../assets/images/project-thumbnails/Journal-Press-Thumbnail.png" class="img-responsive" alt="Homepage for the Wright County Journal-Press" />
+                                    <img src="../../assets/images/project-thumbnails/Journal-Press-Thumbnail.png" class="img-responsive" alt="Homepage for the Wright County Journal-Press" />
                                 </div>
                             </div>
                             <div class="project-description">
