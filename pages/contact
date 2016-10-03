@@ -29,7 +29,24 @@
     <link rel="apple-itouch-icon" href="../assets/images/favicon.ico" />
 
     <style>
-
+        body, :root {
+            background-color: #022C44;
+        }
+        .content {
+            margin-top: 15vh;
+        }
+        #mail-btn {
+            padding: 2vh 3vw;
+            font-size: 1.3em;
+            margin-top: 2.4vh;
+        }
+        .btn-default {
+            margin-top: 0.8vh;
+            margin-bottom: 0.8vh;
+        }
+        .buttons {
+            margin-top: 3em;
+        }
     </style>
 </head>
 
@@ -68,34 +85,22 @@
                             <div class="contact">
                                 <div class="row">
                                     <div class="col-lg-6 col-lg-offset-3">
-                                        <a href="mailto:jmthornton4@gmail.com">
-                                            <h3 class="email">
-                                        jmthornton4@gmail.com
-                                    </h3>
-                                        </a>
+                                        <h1>
+                                            Let's get in touch.
+                                        </h1>
+                                        <a href="mailto:jade@jmthornton.net" class="btn btn-default btn-lg" id="mail-btn">jade@jmthornton.net</a>
                                     </div>
                                 </div>
                                 <div class="row buttons">
-                                    <div>
-
-                                        <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> GitHub</a>
-                                        <a class="btn btn-default btn-lg" href="https://us.linkedin.com/in/jademichael" role="button"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                                    <div class="col-lg-6 col-lg-offset-3">
+                                        <a class="btn btn-default btn-lg" href="https://bitbucket.org/Raindeer44/" role="button"><i class="fa fa-bitbucket"></i> Bitbucket</a>
                                         <a class="btn btn-default btn-lg" href="http://codepen.io/Raindeer44/" role="button"><i class="fa fa-codepen"></i> CodePen</a>
                                         <a class="btn btn-default btn-lg" href="https://www.freecodecamp.com/raindeer44" role="button"><i class="fa fa-fire"></i> FreeCodeCamp</a>
-                                        <a class="btn btn-default btn-lg about-btn" href="about-this-site.html" role="button">
-                                        About This Website
-                                    </a>
+                                        <a class="btn btn-default btn-lg" href="https://github.com/Raindeer44" role="button"><i class="fa fa-github-square"></i> GitHub</a>
+                                        <a class="btn btn-default btn-lg" href="https://us.linkedin.com/in/jademichael" role="button"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                                        <a class="btn btn-default btn-lg" href="https://twitter.com/jmthorntonwhat" role="button"><i class="fa fa-twitter-square"></i> Twitter</a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="contact">
-                    <div class="row top-buffer">
-                        <div class="col-lg-12">
-                            <div class="well">
-
                             </div>
                         </div>
                     </div>
