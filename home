@@ -23,7 +23,6 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/style/main.css" type="text/css" />
-    <link rel="stylesheet" href="assets/style/button.css" type="text/css" />
     <link rel="stylesheet" href="assets/style/navigation.css" type="text/css" />
     <link rel="shortcut icon" href="assets/images/favicon.png" />
     <link rel="apple-itouch-icon" href="assets/images/favicon.ico" />
