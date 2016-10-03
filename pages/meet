@@ -90,6 +90,10 @@
             margin-left: 20%;
             margin-right: 20%;
         }
+        .well {
+            padding-top: 6vh;
+            padding-bottom: 6vh;
+        }
     </style>
 </head>
 
