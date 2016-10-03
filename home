@@ -90,11 +90,11 @@
                 <h2 id="secondary">
                     Web Development
                 </h2>
-            <div class="buttons btn-group-vertical" role="group" aria-label="navigation group" id="buttons">
-                <a type="button" role="button" class="btn btn-default btn-lg" href="pages/meet">Meet</a>
-                <a type="button"role="button" class="btn btn-default btn-lg" href="pages/projects">Projects</a>
-                <a type="button"role="button" class="btn btn-default btn-lg" href="pages/contact">Contact</a>
-            </div>
+                <div class="buttons btn-group-vertical" role="group" aria-label="navigation group" id="buttons">
+                    <a type="button" role="button" class="btn btn-default btn-lg" href="pages/meet">Meet</a>
+                    <a type="button" role="button" class="btn btn-default btn-lg" href="pages/projects">Projects</a>
+                    <a type="button" role="button" class="btn btn-default btn-lg" href="pages/contact">Contact</a>
+                </div>
             </div>
         </section>
     </div>

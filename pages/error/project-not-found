@@ -25,7 +25,8 @@
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
     <link rel="apple-itouch-icon" href="../../assets/images/favicon.ico" />
     <style>
-        html, body {
+        html,
+        body {
             background-color: #022C44;
             margin: auto;
             height: 100%;
@@ -40,6 +41,7 @@
         }
     </style>
 </head>
+
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
@@ -75,14 +77,15 @@
         </h4>
     </div>
     <script type="text/javascript">
-window._idl = {};
-_idl.variant = "modal";
-(function() {
-    var idl = document.createElement('script');
-    idl.async = true;
-    idl.src = 'https://members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'modal');
-    document.getElementsByTagName('body')[0].appendChild(idl);
-})();
-</script>
+        window._idl = {};
+        _idl.variant = "modal";
+        (function() {
+            var idl = document.createElement('script');
+            idl.async = true;
+            idl.src = 'https://members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'modal');
+            document.getElementsByTagName('body')[0].appendChild(idl);
+        })();
+    </script>
 </body>
+
 </html>

@@ -38,6 +38,7 @@
             background-color: #022C44;
             color: #B1ADBB;
         }
+
         .go-back {
             margin-top: 10vh;
         }
