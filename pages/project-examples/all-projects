@@ -175,7 +175,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-md-4 project-tile">
-                        <a href="project-not-found.html">
+                        <a href="../error/project-not-found">
                             <div class="project-thumb">
                                 <div class="row">
                                     <img src="../../assets/images/project-thumbnails/Journal-Press-Thumbnail.png" class="img-responsive" alt="Homepage for the Wright County Journal-Press" />
