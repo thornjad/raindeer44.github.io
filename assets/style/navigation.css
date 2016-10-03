@@ -78,8 +78,8 @@
 }
 
 .navbar-brand img {
-    max-height: 1.8em;
-    margin-top: -0.6vh;
+    max-width: 2vw;
+    margin-top: -1vh;
 }
 
 .navbar-inverse .navbar-nav> .active {
