@@ -74,12 +74,12 @@
 }
 
 .navbar-brand span {
-    margin-left: 1vw;
+    margin-left: 0.5em;
 }
 
 .navbar-brand img {
-    max-width: 2vw;
-    margin-top: -1vh;
+    max-width: 1.6em;
+    margin-top: -0.2em;
 }
 
 .navbar-inverse .navbar-nav> .active {
