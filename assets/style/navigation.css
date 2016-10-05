@@ -102,9 +102,9 @@
     margin-top: -0.2em;
 }
 
-.navbar-inverse .navbar-nav> .active {
+.navbar-nav> li> .active {
     background-color: #346E91;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 @media (max-width: 767px) {
