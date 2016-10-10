@@ -2,7 +2,6 @@ html {
     font-family: Roboto, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    max-width: 1600px;
     margin: 0 auto;
     background: #E5E9EC;
     position: relative;
@@ -23,14 +22,12 @@ body {
 
 a {
   background-color: transparent;
-  color: #2196f3;
   text-decoration: none;
 }
 a:active,
 a:hover {
   outline: 0;
-  color: #0a6ebd;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .well {
