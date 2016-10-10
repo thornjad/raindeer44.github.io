@@ -18,7 +18,25 @@
     <link rel="apple-itouch-icon" href="../assets/images/favicon.ico" />
     <style>
         body {
+            text-align: center;
+            padding-bottom: 25vh;
+        }
+
+        dd {
+            padding-left: 2vw;
+        }
+
+        .basics {
             text-align: left;
+        }
+
+        .main {
+            margin-left: 8.33vw;
+            margin-right: 8.33vw;
+        }
+
+        .btn {
+            color: inherit;
         }
 
         .logo {
@@ -27,8 +45,14 @@
 
         .top-nav {
             width: 100vw;
+            left: 0;
             position: fixed;
             z-index: 1000;
+        }
+
+        .well {
+            background-color: #DEDEDE;
+            border-radius: 2%;
         }
 
         .phantom {
@@ -38,6 +62,43 @@
         .top-nav-btns {
             text-align: center;
         }
+
+        .top-nav-btns a, .top-nav-btns img {
+            margin-left: 1vw;
+            margin-right: 1vw;
+        }
+
+        .hr {
+            width: 20vw;
+            display: inline-block;
+        }
+
+        .main h3 {
+            margin-bottom: 5vh;
+        }
+
+        .hr hr {
+            border: 1px solid #B1ADBB;
+            margin-bottom: 0.5vh;
+        }
+
+        .separator hr {
+            border: 1px solid #B1ADBB;
+            margin: 15vh 5vw;
+        }
+
+        .or {
+            width: 5vw;
+            display: inline-block;
+        }
+
+        .split, .main, .help-btn {
+            margin: 2.5vh;
+        }
+
+        dt {
+            margin-top: 3vh;
+        }
     </style>
 </head>
 
@@ -45,12 +106,39 @@
     <div class="well top-nav">
         <div class="top-nav-btns">
             <a href="../index.html"><img src="../assets/images/icon.svg" alt="JMThornton logo" class="logo"></a>
-            <a href="#table-of-contents" role="button" type="button" class="btn">Contents</a>
-            <a href="#table-of-contents" role="button" type="button" class="btn">Help</a>
+            <a href="pachyman.html" role="button" type="button" class="btn">Back to Manual</a>
         </div>
     </div>
     <div class="container-fluid">
-
+        <div class="phantom"></div>
+        <div class="main">
+            <h3>Spotted a bug or something to be changed/updated?</h3>
+            <a href="https://github.com/Raindeer44/raindeer44.github.io/issues" role="button" type="button" class="btn help-btn">Register an Issue (Recommended)</a>
+            <h6>You'll need a free GitHub account</h6>
+            <div class="split">
+                <div class="hr"><hr></div>
+                <div class="or"><em>or</em></div>
+                <div class="hr"><hr></div>
+            </div>
+            <a href="mailto:jade@jmthornton.net" role="button" type="button" class="btn help-btn">Email the Developer</a>
+            <div class="basics">
+                <div class="separator"><hr></div>
+                <h4>FAQ</h4>
+                <dl>
+                    <dt>What is a tag?</dt>
+                    <dd>A tag is an HTML element, and is enclosed in angle brackets (&lt;&gt;). These are what tell Pachyderm what to do with the text (or other tags) inside the tag. Almost every tag must be closed with a closing tag, which looks something like &lt;/>. <a href="https://en.wikipedia.org/wiki/HTML_element">Learn more</a></dd>
+                    <dt>How do I know when to close which tags?</dt>
+                    <dd>This will become more intuitive with practice. Try thinking of it this way: the last tag you opened is the first tag you have to close. The exceptions are tags which don't contain any text, like <code>&lt;ht&gt;</code>. <a href="http://www.w3schools.com/html/html_elements.asp">Learn more</a></dd>
+                    <dt>What do you mean, "I've changed the rendered example"</dt>
+                    <dd>When I've said this in the manual, I mean that I've added some inline CSS with a style attribute to alter the way the HTML looks. If you're feeling adventurous, take a look at the <a href="https://github.com/Raindeer44/raindeer44.github.io/tree/master/hhh/pachyman.html">HTML code for the manual</a> to see exactly what I wrote. Specifically, I specified the size of the image in the <a href="pachyman.html#img">Image entry</a> and I changed the size of and added a border around the text in the <a href="pachyman.html#hr">Horizontal Rule entry</a>. <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Learn more</a></dd>
+                </dl>
+            </div>
+            <div class="still">
+                <div class="separator"><hr></div>
+                <h4>Can't find what you're looking for?</h4>
+                <a href="mailto:jade@jmthornton.net" role="button" type="button" class="btn help-btn">Email Jade</a>
+            </div>
+        </div>
     </div>
 </body>
 

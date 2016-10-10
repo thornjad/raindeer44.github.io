@@ -12,7 +12,6 @@
     <meta name="google-site-verification" content="JUM1Dl9n9ic9xPMb03Nzf4NgW_-8PWZrJ4eJGC_PoYM" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../assets/style/main.css" type="text/css" />
     <link rel="stylesheet" href="../assets/style/navigation.css" type="text/css" />
     <link rel="shortcut icon" href="../assets/images/favicon.png" />
@@ -22,6 +21,19 @@
             text-align: left;
         }
 
+        dd {
+            padding-left: 2vw;
+        }
+
+        .main {
+            margin-left: 8.33vw;
+            margin-right: 8.33vw;
+        }
+
+        .btn {
+            color: inherit;
+        }
+
         pre {
             font-size: 1em;
         }
@@ -29,6 +41,11 @@
         .well {
             background-color: #DEDEDE;
             border-radius: 2%;
+        }
+
+        .top-nav-btns a, .top-nav-btns img {
+            margin-left: 1vw;
+            margin-right: 1vw;
         }
 
         hr {
@@ -43,6 +60,7 @@
 
         .top-nav {
             width: 100vw;
+            left: 0;
             position: fixed;
             z-index: 1000;
         }
@@ -67,13 +85,13 @@
         <div class="top-nav-btns">
             <a href="../index.html"><img src="../assets/images/icon.svg" alt="JMThornton logo" class="logo"></a>
             <a href="#table-of-contents" role="button" type="button" class="btn">Contents</a>
-            <a href="#table-of-contents" role="button" type="button" class="btn">Help</a>
+            <a href="help.html" role="button" type="button" class="btn">Help</a>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
             <div class="phantom"></div>
-            <div class="col-lg-8 col-lg-offset-1">
+            <div class="main">
                 <h1 id="title">HHH HR Pachyderm presentations text markup manual</h1>
 
                 <hr />
@@ -141,7 +159,7 @@
                 <p>For all users, I cannot recommend more highly the free and open-source text editor <a href="https://atom.io/">Atom</a>. It's what I'm using to write this right now, and there is nothing that can beat it. On the other hand, others may disagree
                     on the awesomeness of Atom. If you're one of those people, check out <a href="https://www.eclipse.org/">Eclipse</a>, <a href="https://www.sublimetext.com/">Sublime</a> or <a href="https://kate-editor.org/">Kate</a>.</p>
 
-                    <div class="phantom" id="intro"></div>
+                <div class="phantom" id="intro"></div>
 
                 <h2>Intro</h2>
 
@@ -149,7 +167,7 @@
                     in more detail. You can contact me best at <a href="mailto:jade@jmthornton.net">jade@jmthornton.net</a>. Alright, let's dive in!</p>
 
 
-                    <div class="phantom" id="basics"></div>
+                <div class="phantom" id="basics"></div>
 
                 <h2>Basics</h2>
 
@@ -329,6 +347,21 @@ Don't listen to that text, I'm not nosy!
                 </div>
 
                 <p><em><br>I've changed the rendered example a little bit so the <code>&lt;hr&gt;</code> isn't confused with the line's I'm using between tag explanations. The box would not normally show up because of the tag.</em></p>
+
+                <hr />
+
+                <div class="phantom" id="img"></div>
+
+                <h3><code>&lt;img&gt;</code></h3>
+
+                <p><strong>Image</strong> -- Exactly what it says on the tin, this tag puts an image in right where you put the tag. Put the url for the image into the "src" attribute. Remember to put in alternate text in the "alt" attribute. This is done to make the presentation more accessible to those who use screen readers.</p>
+
+                <pre class="well"><code>&lt;img src="https://jmthornton.net/assets/images/Placeholder.jpg" alt="A beautiful placeholder image"&gt;
+</code></pre>
+
+                <img style="width: 120px;" src="https://jmthornton.net/assets/images/Placeholder.jpg" alt="A beautiful placeholder image">
+
+                <p><em><br>I've changed the rendered example a little bit so it's a manageable size</em></p>
 
                 <hr />
 
@@ -581,6 +614,7 @@ Don't listen to that text, I'm not nosy!
 
                 <p><b>Research centers and projects by policy area:<br /></b></p>
 
+                <div class="well">
                 <dl>
                     <dt>Global Policy</dt>
                     <dd>
@@ -594,6 +628,7 @@ Don't listen to that text, I'm not nosy!
                         <a href="http://bit.ly/2cfoMsQ">State and Local Policy Program</a>
                     </dd>
                 </dl>
+            </div>
 
                 <p><br /><br /><br />
                     <a href="https://www.hhh.umn.edu/people-research/research-centers">Learn more</a></p>
@@ -620,12 +655,12 @@ Don't listen to that text, I'm not nosy!
                 <div class="phantom" id="about"></div>
 
                 <footer>
-                <h6>The Pachyderm Manual (PachyMan) was created in 2016 by Jade Thornton for the Human Resources department of the Humphrey School of Public Affairs at the University of Minnesota, to assist employees in editing an maintaining the new employee orientation presentations. The original source (in markdown) and PDF of this manual is located on the University of Minnesota shared "Administration" drive in "S:\Finance\Human Resources\Jade\Pachyderm\". If you do not have access to this drive, contact your supervisor and/or Humphrey ITS. This web page is adapted from the source, and is likely more updated.</h6>
+                    <h6>The Pachyderm Manual (PachyMan) was created in 2016 by Jade Thornton for the Human Resources department of the Humphrey School of Public Affairs at the University of Minnesota, to assist employees in editing an maintaining the new employee orientation presentations. The original source (in markdown) and PDF of this manual is located on the University of Minnesota shared "Administration" drive in "S:\Finance\Human Resources\Jade\Pachyderm\". If you do not have access to this drive, contact your supervisor and/or Humphrey ITS. This web page is adapted from the source, and is likely more updated.</h6>
 
-                <h6>This web page is <a href="https://github.com/Raindeer44/raindeer44.github.io/tree/master/hhh/pachyman.html">maintained on GitHub</a>, see the <a href="help.html">help page</a> for more info. This website is <a href="https://github.com/Raindeer44/raindeer44.github.io">hosted with love on GitHub</a>.</h6>
+                    <h6>This web page is <a href="https://github.com/Raindeer44/raindeer44.github.io/tree/master/hhh/pachyman.html">maintained on GitHub</a>, see the <a href="help.html">help page</a> for more info. This website is <a href="https://github.com/Raindeer44/raindeer44.github.io">hosted with love on GitHub</a>.</h6>
 
-                <h6><a href="../LICENSE">Copyright 2016 Jade Thornton</a></h6>
-            </footer>
+                    <h6><a href="../LICENSE">Copyright 2016 Jade Thornton</a></h6>
+                </footer>
             </div>
         </div>
     </div>
