@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PachyMan | JMThornton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jade Thornton" />
+    <meta name="description" content="Manual for maintaining and editing HR Pachyderm presentations at the Humphrey School of Public Affairs" />
+    <meta name="keywords" content="web development, web design, internet programming, internet development, jade thornton, hhh, humphrey school, pachyderm, human resources, university of minnesota, umn, hubert humphrey" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="google-site-verification" content="JUM1Dl9n9ic9xPMb03Nzf4NgW_-8PWZrJ4eJGC_PoYM" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/style/main.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/style/navigation.css" type="text/css" />
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    <link rel="apple-itouch-icon" href="../assets/images/favicon.ico" />
+    <style>
+        body {
+            text-align: left;
+        }
+
+        pre {
+            font-size: 1em;
+        }
+
+        .well {
+            background-color: white;
+        }
+
+        hr {
+            border: 1px solid black;
+            margin-top: 9vh;
+            margin-bottom: 9vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-1">
+            <div class="well side-nav">
+                <ul class="nav-pills nav nav-stacked">
+                    <li role="presentation"><a href="#table-of-contents">Table of Contents</a></li>
+                    <li role="presentation"><a href="">Help</a></li>
+                    <li role="presentation"><a href="https://jmthornton.net">JMThornton Web Development</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-8 col-lg-offset-1">
+            <h1 id="title">HHH HR Pachyderm presentations text markup manual</h1>
+
+            <hr />
+
+            <ul class="table-of-contents" id="table-of-contents">
+                <li><a href="">Begin</a></li>
+                <li><a href="">Get Ready</a></li>
+                <li><a href="">Intro</a></li>
+                <li><a href="">Basics</a></li>
+                <ul>
+                    <li><a href="#a">a (Anchor)</a></li>
+                    <li><a href="#b">b (Bold)</a></li>
+                    <li><a href="#br">br (Line Break)</a></li>
+                    <li><a href="#dd">dd (Description Definition)</a></li>
+                    <li><a href="#div">div (Division)</a></li>
+                    <li><a href="#dl">dl (Description List)</a></li>
+                    <li><a href="#dt">dt (Description Term)</a></li>
+                    <li><a href="#em">em (Emphasis/Italic)</a></li>
+                    <li><a href="#hr">hr (Horizontal Rule)</a></li>
+                    <li><a href="#li">li (List Item)</a></li>
+                    <li><a href="#ol">ol (Ordered List)</a></li>
+                    <li><a href="#p">p (Paragraph)</a></li>
+                    <li><a href="#ul">ul (Unordered List)</a></li>
+                    <li><a href="#comment">Comment</a></li>
+                </ul>
+                <li><a href="">Style</a></li>
+                <li><a href="">Minimization (Uglification)</a></li>
+                <li><a href="">Beautification</a></li>
+                <li><a href="">Example</a></li>
+                <li><a href="">Conclusion</a></li>
+            </ul>
+
+            <hr />
+
+            <h3 id="hi">Hi there!</h3>
+
+            <p>My name is Jade Thornton. While I did not create the new employee orientation Pachyderm presentations, I have done some extensive editing and maintenance. The majority of changes I made use hypertext markup language (HTML), so I created this
+                manual as a reference for anyone who might be maintaining what I've written.</p>
+
+            <div class="well">
+                <h4>If you are already comfortable with HTML, you need not read past the following paragraph</h4>
+
+                <p>Pachyderm is atypical in that it renders all whitespace written. This means every line break (pressing <kbd>enter</kbd> or <kbd>return</kbd>) used to make code readable is translated as a <code>&lt;br&gt;</code>. To get around this, explicitly
+                    specify your line breaks, then minify your code.</p>
+            </div>
+
+            <h2 id="getready">Get ready</h2>
+
+            <p>All HTML is stored as a regular old text file, except that the file extension is ".html" and whatever software is reading it is told it's HTML. Because of this, absolutely any text editor will work just fine for editing what I've written.
+                I do recommend using a text editor rather than just using the text box in Pachyderm, however, for one good reason: syntax highlighting. This means that different HTML elements will have different colors so you can very quickly tell the
+                difference between a tag, some text, a URL, etc.</p>
+
+            <p>If you're on Windows, Notepad will already be installed and works fairly well for quick editing. A wonderful improved version, called Notepad++, is much better at HTML. <a href="https://notepad-plus-plus.org/download/v7.html">Download and install it for free</a>.</p>
+
+            <p>If you're on a UN*X machine (OS X, macOS, Linux, FreeBSD, etc.), VIM comes pre-installed and is a great choice for fast editing. Just type "vim" followed by the file name in the terminal. However, using VIM has a steep learning curve. If you're
+                not going to be working with it a lot, it's probably not worth the time you'd have to invest.</p>
+
+            <p>For all users, I cannot recommend more highly the free and open-source text editor <a href="https://atom.io/">Atom</a>. It's what I'm using to write this right now, and there is nothing that can beat it. On the other hand, others may disagree
+                on the awesomeness of Atom. If you're one of those people, check out <a href="https://www.eclipse.org/">Eclipse</a>, <a href="https://www.sublimetext.com/">Sublime</a> or <a href="https://kate-editor.org/">Kate</a>.</p>
+
+            <h2 id="intro">Intro</h2>
+
+            <p>This is not going to be a class on HTML. I'm not going to give you a whole lot of "why", only "what" and some "how to use". There are fantastic resources online for further learning if you're interested, namely <a href="https://lynda.com">lynda.com</a>                and <a href="https://freecodecamp.com">freecodecamp.com</a>. And as always, as I happend to be a web developer, feel free to shoot me an email anytime if you need help, have a question or want to talk about anything in this manual in more
+                detail. You can contact me best at <a href="mailto:jade@jmthornton.net">jade@jmthornton.net</a>. Alright, let's dive in!</p>
+
+            <h2 id="basics">Basics</h2>
+
+            <p>First off, you need to know what I mean when I say "tag". That basically means anything inside &lt;>, angle brackets. These are what tell Pachyderm what you want to do with the text following the tag. Almost every tag in HTML must be followed
+                by a closing tag, which will look something like
+                </>. This tells Pachyderm where the end of that tag is. Look for this in the examples below.</p>
+
+            <p>Secondly, you need to know that when tags are closed, you have to close them in the reverse order you opened them. If we have an imaginary tag called <code>&lt;foo&gt;</code> and another one called <code>&lt;bar&gt;</code>, I can use them
+                both on the same text at the same time, but I have to close them at the right time:</p>
+
+            <pre class="well"><code>&lt;foo&gt;&lt;bar&gt;Some very special foobar text&lt;/bar&gt;&lt;/foo&gt;
+</code></pre>
+
+            <p>Notice that I opened the <code>&lt;foo&gt;</code> tag first, so I close it with <code>&lt;/foo&gt;</code> last. <code>&lt;bar&gt;</code> is on the <em>inside</em> of <code>&lt;foo&gt;</code> so it has to be closed with <code>&lt;/bar&gt;</code>                before I close <code>&lt;foo&gt;</code>. Keeping track of this ordering might be someone tedious when you're not used to it, but it's very important to do.</p>
+
+            <p>Thirdly, Pachyderm text boxes have a maximum size of 1500 characters. One way to help keep under this limit is to shorten all your links. I like to use <a href="https://bitly.com/?main">Bitly</a> for page links and <a href="https://sli.mg/">Slimg</a>                for images.</p>
+
+            <p>Finally, you need to understand how I've structured this manual. Each entry is about a single tag. They are in alphabetical order and separated by horizontal lines. The heading shows what the tag looks like, and the name and explanation follow.
+                Under that, there is a code block, which contains an example of how to use the tag. Beneath the block is what the code in the code block renders to. <em>When I say render, I mean the text that Pachyderm (or a web browser) would show if you put in the code.</em></p>
+
+            <hr />
+
+            <h3 id="a"><code>&lt;a&gt;</code></h3>
+
+            <p><strong>Anchor</strong> -- This tag is used to create a link to another web page. Whenever you see a blue underlined link online, you know it's because of an anchor tag! The <code>href</code> attribute contains the URL the link will point
+                to. <strong>Note:</strong> <em>don't put any spaces between the <code>href</code> attribute, the equality symbol and the link. Also, the link must be contained within quotes. They can be single quotes ('') or double quotes ("") as long as both sides of the link have the</em>                <strong><em>same</em></strong> <em>kind of quotes.</em></p>
+
+            <pre class="well"><code>    &lt;a href="https://jmthornton.net"&gt;I'm a link!&lt;/a&gt;
+</code></pre>
+
+            <p><a href="https://jmthornton.net">I'm a link!</a></p>
+
+            <hr />
+
+            <h3 id="b"><code>&lt;b&gt;</code></h3>
+
+            <p><strong>Bold</strong> -- Exactly what it says on the tin: it makes text bold.</p>
+
+            <pre class="well"><code>&lt;b&gt;Bold text&lt;/b&gt;
+</code></pre>
+
+            <p><b>Bold text</b></p>
+
+            <hr />
+
+            <h3 id="bralsobr"><code>&lt;br&gt;</code>, also <code>&lt;br /&gt;</code></h3>
+
+            <p><strong>Line Break</strong> -- This handy little tag is extremely convenient when working with Pachyderm. It inserts a line break wherever you want it. It has the same effect as pressing enter in a text editor (like Atom or Eclipse) or text
+                processor (like Word or Writer). <strong>Note:</strong> <em>the line break tag is an exception to the rule of needing a closing tag -- it's "self-closing". This means you only need one tag to get the job done.</em></p>
+
+            <pre class="well"><code>Go placidly amid the noise and haste,&lt;br&gt;and remember what peace there may be in silence.
+</code></pre>
+
+            <p>Go placidly amid the noise and haste,<br>and remember what peace there may be in silence.</p>
+
+            <hr />
+
+            <h3 id="dd"><code>&lt;dd&gt;</code></h3>
+
+            <p><strong>Description Definition</strong> -- This is used together with <code>&lt;dl&gt;</code> and <code>&lt;dt&gt;</code> to create an entry kind of like a dictionary. The description definition comes after the <code>&lt;dt&gt;</code> description
+                term.
+            </p>
+
+            <pre class="well"><code>&lt;dl&gt;
+    &lt;dt&gt;Jade Thornton&lt;/dt&gt;
+    &lt;dd&gt;The best developer ever&lt;/dd&gt;
+    &lt;dt&gt;Humphrey School&lt;/dt&gt;
+    &lt;dd&gt;The best policy school ever&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+
+            <dl>
+                <dt>Jade Thornton</dt>
+                <dd>The best developer ever</dd>
+                <dt>Humphrey School</dt>
+                <dd>The best policy school ever</dd>
+            </dl>
+
+            <hr />
+
+            <h3 id="div"><code>&lt;div&gt;</code></h3>
+
+            <p><strong>Division</strong> -- This is perhaps the most common tag used in full-blown HTML, though I've used it sparingly in Pachyderm. Not to be confused with mathematical division, this tag separates HTML into sections. A <code>class</code>                or <code>id</code> attribute identifies the division so Pachyderm can find it by its name.</p>
+
+            <pre class="well"><code>&lt;div class="fun" id="the-best-div"&gt;I don't look like much, but I'm text inside a div&lt;/div&gt;
+</code></pre>
+
+            <div class="fun" id="the-best-div">I don't look like much, but I'm text inside a div</div>
+
+            <hr />
+
+            <h3 id="dl"><code>&lt;dl&gt;</code></h3>
+
+            <p><strong>Description List</strong> -- This is used together with <code>&lt;dd&gt;</code> and <code>&lt;dt&gt;</code> to create an entry kind of like a dictionary. The description list encloses the list elements, <code>&lt;dd&gt;</code> and
+                <code>&lt;dt&gt;</code>. This list is <em>not numbered nor bulleted</em>.</p>
+
+            <pre class="well"><code>&lt;dl&gt;
+    &lt;dt&gt;Jade Thornton&lt;/dt&gt;
+    &lt;dd&gt;The best developer ever&lt;/dd&gt;
+    &lt;dt&gt;Humphrey School&lt;/dt&gt;
+    &lt;dd&gt;The best policy school ever&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+
+            <dl>
+                <dt>Jade Thornton</dt>
+                <dd>The best developer ever</dd>
+                <dt>Humphrey School</dt>
+                <dd>The best policy school ever</dd>
+            </dl>
+
+            <hr />
+
+            <h3 id="dt"><code>&lt;dt&gt;</code></h3>
+
+            <p><strong>Description Term</strong> -- This is used together with <code>&lt;dl&gt;</code> and <code>&lt;dd&gt;</code> to create an entry kind of like a dictionary. The description term acts like the word which is being defined by <code>&lt;dd&gt;</code>.</p>
+
+            <pre class="well"><code>&lt;dl&gt;
+    &lt;dt&gt;Jade Thornton&lt;/dt&gt;
+    &lt;dd&gt;The best developer ever&lt;/dd&gt;
+    &lt;dt&gt;Humphrey School&lt;/dt&gt;
+    &lt;dd&gt;The best policy school ever&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+
+            <dl>
+                <dt>Jade Thornton</dt>
+                <dd>The best developer ever</dd>
+                <dt>Humphrey School</dt>
+                <dd>The best policy school ever</dd>
+            </dl>
+
+            <hr />
+
+            <h3 id="em"><code>&lt;em&gt;</code></h3>
+
+            <p><strong>Emphasis</strong> -- Emphasizing something in HTML means to make it italicized. Yes, there is an <code>&lt;i&gt;</code> tag, but we don't use it anymore (for reasons beyond the scope of this document). <em>Don't use <code>&lt;i&gt;</code></em>.</p>
+
+            <pre class="well"><code>&lt;em&gt;I am some very stylish italicized text&lt;/em&gt;
+</code></pre>
+
+            <p><em>I am some very stylish italicized text</em></p>
+
+            <hr />
+
+            <h3 id="hr"><code>&lt;hr&gt;</code></h3>
+
+            <p><strong>Horizontal Rule</strong> -- This tag inserts a horizontal line, exactly like what you see separating tag explanations here. <strong>Note:</strong> <em>This is an exception to the rule of needing a closing tag -- it's "self-closing". This means you only need one tag to get the job done.</em></p>
+
+            <pre class="well"><code>I am some really nice text, but I want some privacy from my nosy neighbor.
+&lt;hr&gt;
+Don't listen to that text, I'm not nosy!
+</code></pre>
+
+            <div style="max-width:550px; border: 2px solid;">
+                <div style="padding: 10px">
+                    I am some really nice text, but I want some privacy from my nosy neighbor.
+                    <hr> Don't listen to that text, I'm not nosy!
+                </div>
+            </div>
+
+            <p><em><br>I've changed the rendered example a little bit so the <code>&lt;hr&gt;</code> isn't confused with the line's I'm using between tag explanations. The box would not normally show up because of the tag.</em></p>
+
+            <hr />
+
+            <h3 id="li"><code>&lt;li&gt;</code></h3>
+
+            <p><strong>List Item</strong> -- This is part of creating a list (with bullet points or numbers). A <code>&lt;li&gt;</code> tag surrounds each item in the list. In the example below, a <em>bulleted</em> list is used to show items I happen to
+                need to get from the store this weekend. When this is rendered in Pachyderm, each item in a <code>&lt;li&gt;</code> tag will have its own bullet point.</p>
+
+            <pre class="well"><code>&lt;ul&gt;
+    &lt;li&gt;Milk&lt;/li&gt;
+    &lt;li&gt;Carrots&lt;/li&gt;
+    &lt;li&gt;Sweet potatoes&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+            <ul>
+                <li>Milk</li>
+                <li>Carrots</li>
+                <li>Sweet potatoes</li>
+            </ul>
+
+            <hr />
+
+            <h3 id="ol"><code>&lt;ol&gt;</code></h3>
+
+            <p><strong>Ordered List</strong> -- This tag encloses list items (<code>&lt;li&gt;</code>'s) and creates a <em>numbered</em> list.</p>
+
+            <pre class="well"><code>&lt;ol&gt;
+    &lt;li&gt;Buy low&lt;/li&gt;
+    &lt;li&gt;Sell high&lt;/li&gt;
+    &lt;li&gt;Profit&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+            <ol>
+                <li>Buy low</li>
+                <li>Sell high</li>
+                <li>Profit</li>
+            </ol>
+
+            <hr />
+
+            <h3 id="p"><code>&lt;p&gt;</code></h3>
+
+            <p><strong>Paragraph</strong> -- While simply writing out text in Pachyderm works just fine, using <code>&lt;p&gt;</code> is sometimes a nice way to separate the text from other nearby parts.</p>
+
+            <pre class="well"><code>&lt;p&gt;How now brown cow?&lt;/p&gt;
+</code></pre>
+
+            <p>How now brown cow?</p>
+
+            <hr />
+
+            <h3 id="ul"><code>&lt;ul&gt;</code></h3>
+
+            <p><strong>Unordered List</strong> -- This tag encloses list items (<code>&lt;li&gt;</code>'s) and creates a <em>bulleted</em> list.</p>
+
+            <pre class="well"><code>&lt;ul&gt;
+    &lt;li&gt;Capybaras are better than dogs&lt;/li&gt;
+    &lt;li&gt;Dogs are better than most animals&lt;/li&gt;
+    &lt;li&gt;Bunnies are better than every animal ever&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+            <ul>
+                <li>Capybaras are better than dogs</li>
+                <li>Dogs are better than most animals</li>
+                <li>Bunnies are better than every animal ever</li>
+            </ul>
+
+            <hr />
+
+            <h3 id="comment"><code>&lt;!-- --&gt;</code></h3>
+
+            <p><strong>Comment</strong> -- This is actually two tags, <code>&lt;!--</code> and <code>--&gt;</code>. Any text put between these tags is a comment, and Pachyderm won't render it at all. These are used to make notes for yourself or others. <strong>Note:</strong>                <em>Though the user can't see comments, they still count towards the 1500 character limit.</em></p>
+
+            <pre class="well"><code>&lt;!--I'm a happy little comment which likes to hide! --&gt;
+</code></pre>
+
+            <p>
+                <!--I'm a happy little comment which likes to hide! --><br></p>
+
+            <p><em>No, I didn't forget to put the code under the code block. It's a comment so it doesn't show up! Take a look at the source code to see that there really is a comment there. You can find the location of the source code at the very end of this manual.</em></p>
+
+            <hr />
+
+            <h2 id="style">Style</h2>
+
+            <p>The primary reason I edited these Pachyderm presentations was to improve their style. Let's talk about some of the big style decisions I made, which are decisions I think you, as an editor of these presentations, should stick to and be sure
+                to standardize across the board.</p>
+
+            <ul>
+                <li>
+                    <p>There are no descriptions on pictures. Previously, the descriptions simply instructed viewers to click on the image, which was a link to an external resource. This is a far outdated design practice, which has been abandoned in favor
+                        of intuitive controls. The images still link to external resources, as do the little globe icons next to them, but to make the experience more intuitive:</p>
+                </li>
+
+                <li>
+                    <p>I added "Learn more" links to most pages. They link to the same external resource as the images, but require no instructions for a user to know what to do. If a user wants to learn more, they click the link that says exactly what they
+                        want.
+                    </p>
+                </li>
+
+                <li>
+                    <p>I centered the images via a fun little hack. With credit for the idea to Kate Conners, I took the pre-existing images and photoshopped them into standardized rectangles of 400x300px with the image centered.</p>
+                </li>
+
+                <li>
+                    <p>I only used images licensed under a Creative Commons license. Knowledge is free, and open-source is the future. Creative Commons images allow me to make changes I want and to use them in any way I want. I highly encourage you to only
+                        use images which are also copylefted.</p>
+                </li>
+            </ul>
+
+            <p>If you've already explored the presentations, which you probably have, you'll notice something about what I just said. They're not entirely true. There is at least one exception to every bullet I listed above. The simple reason is, in those
+                situations, I made a different design decision than with the rest of the presentation. You, as the editor and/or maintainer of the presentation have the full power to make your own design decisions. I only ask that you adhere to the following
+                design rule:</p>
+
+            <p><strong><em>Don't make the user think</em></strong>. Make features and options obvious; if you have to explain something to the user, it means you need to rethink it yourself. We want the user to enjoy using these presentations, and that means
+                they shouldn't notice most of it, it should be automatic.</p>
+
+            <hr />
+
+            <h2 id="minimization">Minimization (aka Uglification)</h2>
+
+            <p>Now here's an important piece of advice I figured out the hard way. Pachyderm renders HTML differently from the way a normal browser would: it renders all whitespace. This means every time you press enter, Pachyderm treats it like you wrote
+                <code>&lt;br&gt;</code>. To get around the very annoying spacing problems this can cause, your HTML code needs to be minimized. This essentially means that all the whitespace will be removed, and the entire section of HTML code will be
+                put onto a single line. Here's what you need to do to minify your code for Pachyderm:</p>
+
+            <ol>
+                <li>Have your HTML open in a text editor of some sort</li>
+                <li>Go to [willpeavy.com/minifier](http://www.willpeavy.com/minifier)</li>
+                <li>Copy and paste your code into the text box on the website</li>
+                <li>Click the "Minify" button</li>
+                <li>Copy and paste the minified code into Pachyderm</li>
+                <li>Make sure to preview the screen to verify it looks like what you wanted</li>
+            </ol>
+
+            <aside>The Will Peavy minifier works well but is not open source. If I find a decent minifier which is fully open source, I'll update this document if I can.</aside>
+
+            <h2 id="beautification">Beautification (aka the opposite of minification)</h2>
+
+            <p>This might be an important step in decoding what I've put up on Pachyderm, and for maintaining the presentations in general. If you're using the Atom editor (the best one), install the atom-beautify package. If you're on some other editor,
+                I recommend the following steps.</p>
+
+            <ol>
+                <li>Have the HTML you want open in Pachyderm</li>
+                <li>Go to [ctrlq.org/beautifier/](https://ctrlq.org/beautifier/)</li>
+                <li>Copy and paste your code into the text box on the website</li>
+                <li>Click the "Beautify Code" button</li>
+                <li>Copy and paste the minified code into your text editor</li>
+            </ol>
+
+            <hr />
+
+            <h2 id="example">An example Pachyderm text entry</h2>
+
+            <p>Let's run through an example of putting together tags to create a pretty text entry in Pachyderm. This code is taken from the "Research" slide of the "Our School" screen.</p>
+
+            <p>When we open up the slider in Pachyderm, this is the code we find in the text box:</p>
+
+            <pre class="well"><code>&lt;b&gt;Research centers and projects by policy area:&lt;br /&gt;&lt;/b&gt;&lt;dl&gt;&lt;dt&gt;Global Policy&lt;/dt&gt;&lt;dd&gt;&lt;a href="http://bit.ly/2cgGidU"&gt;Freeman Center for International Economic Policy&lt;/a&gt;&lt;/dd&gt;&lt;dd&gt;&lt;a href="http://bit.ly/2cfov9s"&gt;International Fellows and Scholars&lt;/a&gt;&lt;/dd&gt;&lt;br /&gt;&lt;dt&gt;Leadership and Management&lt;/dt&gt;&lt;dd&gt;&lt;a href="http://bit.ly/2cL0CZ0"&gt;Center for Integrative Leadership&lt;/a&gt;&lt;/dd&gt;&lt;dd&gt;&lt;a href="http://bit.ly/2cLtRMy"&gt;Public and Nonprofit Leadership Center&lt;/a&gt;&lt;/dd&gt;&lt;br /&gt;&lt;dt&gt;Politics and Governance&lt;/dt&gt;&lt;dd&gt;&lt;a href="http://bit.ly/2cgGPMX"&gt;Center for the Study of Politics and Governance&lt;/a&gt;&lt;/dd&gt;&lt;br /&gt;&lt;dt&gt;Science, Technology and the Environment&lt;/dt&gt;&lt;dd&gt;&lt;a href="http://bit.ly/2cfnttY"&gt;Center for Science, Technology, and Environmental Policy&lt;/a&gt;&lt;/dd&gt;&lt;br /&gt;&lt;dt&gt;Social Policy and Policy Analysis&lt;/dt&gt;&lt;dd&gt;&lt;a href="http://bit.ly/2ccUlkZ"&gt;Center on Women, Gender and Public Policy&lt;/a&gt;&lt;/dd&gt;&lt;dd&gt;&lt;a href="http://bit.ly/2cjzyiQ"&gt;Human Capital Research Collaborative&lt;/a&gt;&lt;/dd&gt;&lt;dd&gt;&lt;a href="http://bit.ly/2czQj6S"&gt;Roy Wilkins Center for Human Relations and Social Justice&lt;/a&gt;&lt;/dd&gt;&lt;br /&gt;&lt;dt&gt;Urban and Regional Planning&lt;/dt&gt;&lt;dd&gt;&lt;a href="http://bit.ly/2cfoMsQ"&gt;State and Local Policy Program&lt;/a&gt;&lt;/dd&gt;&lt;/dl&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;a href="https://www.hhh.umn.edu/people-research/research-centers"&gt;Learn more&lt;/a&gt;
+</code></pre>
+
+            <p>Looks messy, right? That's a breeze for a computer to read, but we're not computers! Let's beautify it so we can read it. I'm going to use the Atom package atom-beautify for this one. Here's what I get:</p>
+
+            <pre class="well"><code>&lt;b&gt;Research centers and projects by policy area:&lt;br /&gt;&lt;/b&gt;
+&lt;dl&gt;&lt;dt&gt;Global Policy&lt;/dt&gt;
+    &lt;dd&gt;&lt;a href="http://bit.ly/2cgGidU"&gt;Freeman Center for International Economic Policy&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;a href="http://bit.ly/2cfov9s"&gt;International Fellows and Scholars&lt;/a&gt;&lt;/dd&gt;&lt;br /&gt;&lt;dt&gt;Leadership and Management&lt;/dt&gt;
+    &lt;dd&gt;&lt;a href="http://bit.ly/2cL0CZ0"&gt;Center for Integrative Leadership&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;a href="http://bit.ly/2cLtRMy"&gt;Public and Nonprofit Leadership Center&lt;/a&gt;&lt;/dd&gt;&lt;br /&gt;&lt;dt&gt;Politics and Governance&lt;/dt&gt;
+    &lt;dd&gt;&lt;a href="http://bit.ly/2cgGPMX"&gt;Center for the Study of Politics and Governance&lt;/a&gt;&lt;/dd&gt;&lt;br /&gt;&lt;dt&gt;Science, Technology and the Environment&lt;/dt&gt;
+    &lt;dd&gt;&lt;a href="http://bit.ly/2cfnttY"&gt;Center for Science, Technology, and Environmental Policy&lt;/a&gt;&lt;/dd&gt;&lt;br /&gt;&lt;dt&gt;Social Policy and Policy Analysis&lt;/dt&gt;
+    &lt;dd&gt;&lt;a href="http://bit.ly/2ccUlkZ"&gt;Center on Women, Gender and Public Policy&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;a href="http://bit.ly/2cjzyiQ"&gt;Human Capital Research Collaborative&lt;/a&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;a href="http://bit.ly/2czQj6S"&gt;Roy Wilkins Center for Human Relations and Social Justice&lt;/a&gt;&lt;/dd&gt;&lt;br /&gt;&lt;dt&gt;Urban and Regional Planning&lt;/dt&gt;
+    &lt;dd&gt;&lt;a href="http://bit.ly/2cfoMsQ"&gt;State and Local Policy Program&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;a href="https://www.hhh.umn.edu/people-research/research-centers"&gt;Learn more&lt;/a&gt;
+</code></pre>
+
+            <p>That's a little better. For the purposes of explaining, I'm going to beautify it a little more by hand. I'm also going to cut out some of the links in the middle to make it shorter (this is only an example after all).</p>
+
+            <pre class="well"><code>1  &lt;b&gt;Research centers and projects by policy area:&lt;br /&gt;&lt;/b&gt;
+2  &lt;dl&gt;
+3      &lt;dt&gt;Global Policy&lt;/dt&gt;
+4      &lt;dd&gt;
+5          &lt;a href="http://bit.ly/2cgGidU"&gt;Freeman Center for International Economic Policy&lt;/a&gt;
+6      &lt;/dd&gt;
+7      &lt;dd&gt;
+8          &lt;a href="http://bit.ly/2cfov9s"&gt;International Fellows and Scholars&lt;/a&gt;
+9      &lt;/dd&gt;
+10     &lt;dt&gt;Urban and Regional Planning&lt;/dt&gt;
+11     &lt;dd&gt;
+11         &lt;a href="http://bit.ly/2cfoMsQ"&gt;State and Local Policy Program&lt;/a&gt;
+12     &lt;/dd&gt;
+13 &lt;/dl&gt;
+14 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+15 &lt;a href="https://www.hhh.umn.edu/people-research/research-centers"&gt;Learn more&lt;/a&gt;
+</code></pre>
+
+            <p>Much better. I've also added line numbers so we can easily refer back to this code block. Now let's go through it line by line together.</p>
+
+            <p>Line 1: Here we open with a <code>&lt;b&gt;</code> tag. Recall that this turns the following line of text bold. At the end, we see a <code>&lt;br /&gt;</code> which causes a line break after this text (<code>&lt;br&gt;</code> and <code>&lt;br /&gt;</code>                are equivalent). At the very end, we close the bold tag.</p>
+
+            <p>Line 2: We are going to begin a description list, so we open the list using <code>&lt;dl&gt;</code>.</p>
+
+            <p>Line 3: Here's the first description term in our list, which we enclose in opening and closing <code>&lt;dt&gt;</code> tags.</p>
+
+            <p>Line 4: Our description term needs a definition, which we begin with an opening <code>&lt;dd&gt;</code> tag.</p>
+
+            <p>Line 5: Here's our description definition, which happens to be a link. Links are created using the anchor tag. Inside of the opening anchor tag, we add an attribute called <code>href</code>, which has a value of "http://bit.ly/2cgGidU". Remember
+                not to put a space between these parts, and to put the link in quotes. This link is shortened using Bitly to conserve characters (recall that Pachyderm has a character limit of 1500). At the end of the line, we remember to close the anchor.</p>
+
+            <p>Line 6: That's the end of our definition, so we close it with <code>&lt;/dd&gt;</code></p>
+
+            <p>Lines 7-9: These lines are built the same as lines 4-6.</p>
+
+            <p>Line 10: Now we want to define another term, so we open it with a description term tag, with a closing tag at the end of the line.</p>
+
+            <p>Lines 11-12: These lines are built the same as lines 4-6.</p>
+
+            <p>Line 13: That's the end of the description list! Don't forget to close it with <code>&lt;/dl&gt;</code></p>
+
+            <p>Line 14: Here we have some more line breaks. On every page which includes a "Learn more" link, I put three line breaks between it and the rest of the content.</p>
+
+            <p>Line 15: Speak of the devil, here's our "Learn more" link! Every one of these bad boys links to the same place the picture links to. Read about the reasoning for this in the <em>Style</em> section of this manual.</p>
+
+            <p>There we have it! That's one of the most HTML-rich slides in the whole presentation. Some slides don't even have any HTML at all! Let's take a look at the code we just talked about:</p>
+
+            <p><b>Research centers and projects by policy area:<br /></b></p>
+
+            <dl>
+                <dt>Global Policy</dt>
+                <dd>
+                    <a href="http://bit.ly/2cgGidU">Freeman Center for International Economic Policy</a>
+                </dd>
+                <dd>
+                    <a href="http://bit.ly/2cfov9s">International Fellows and Scholars</a>
+                </dd>
+                <dt>Urban and Regional Planning</dt>
+                <dd>
+                    <a href="http://bit.ly/2cfoMsQ">State and Local Policy Program</a>
+                </dd>
+            </dl>
+
+            <p><br /><br /><br />
+                <a href="https://www.hhh.umn.edu/people-research/research-centers">Learn more</a></p>
+
+            <p>Not too shabby!</p>
+
+            <hr />
+
+            <h2 id="conclusion">Conclusion</h2>
+
+            <p>Hooray!! That's it! You should be good to go to figure out everything I've written in Pachyderm and make any changes you'd like. If you're feeling adventurous, there are dozens more HTML tags to explore, and Pachyderm will render anything
+                under the HTML5 specification. If you get stuck or don't know what to do, internalize the mantra "Read, Search, Ask". This means:</p>
+
+            <ol>
+                <li>Read the description of what you're trying to do (RTFM). This could mean looking at this manual again or going online to the HTML5 documentation (go to [W3.com](https://www.w3.org/) or the [Mozilla Developer Network](https://developer.mozilla.org/en-US/))</li>
+                <li>Search online to see if anyone has had the same problem (they probably have). [Stack Overflow](https://stackoverflow.com/) is by far the best place to look for this sort of thing</li>
+                <li>Ask someone who knows. Shoot me an email at [jade@jmthornton.net](mailto:jade@jmthornton.net) or talk to Humphrey IT. We'd all love to help you out.</li>
+            </ol>
+
+            <hr />
+
+            <h6>The original source code of this manual is written in markdown and is located on the University of Minnesota shared "Administration" drive at "S:\FINANCE\Human Resources\Jade\Pachyderm\manual.md". It was then converted to PDF and posted. The source markdown was last updated October 7, 2016. This documentation is provided "as is", without warranty of any kind. You, and anyone else, may freely deal in the this documentation without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit persons to whom the documentation is furnished to do so.</h6>
+        </div>
+    </div>
+</body>
+
+</html>
