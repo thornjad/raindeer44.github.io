@@ -37,36 +37,40 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-color: inherit;
-            padding-top: 15vh;
+            padding-top: 7em;
             height: 100vh;
         }
 
+        .content .section {
+            margin: 3vw;
+        }
+
         #main {
-            font-size: 3em;
+            font-size: 3.5em;
             font-weight: bolder;
         }
 
         #secondary {
-            padding-top: 1vh;
-            font-weight: bold;
+            padding-top: 0.5em;
+            font-weight: bolder;
         }
 
         #buttons {
-            padding-top: 1vh;
+            padding-top: 0.5em;
         }
 
         .back-well {
             background-color: rgba(229, 233, 236, 0.6);
             box-shadow: none;
-            padding-top: 1vh;
-            padding-bottom: 1vh;
+            padding-top: 1em;
+            padding-bottom: 1em;
             border-radius: 4%;
         }
 
         .btn-default {
-            margin-top: 2vh;
-            margin-bottom: 2vh;
-            padding: 2.1vh 3vw;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            padding: 0.7em 3vw;
             border: 2px solid #1c1c1c;
             color: #1c1c1c;
             background-color: rgba(229, 233, 236, 0.6);
@@ -83,11 +87,11 @@
     <!-- TODO animate name and title in after image loads, then animate navbar buttons in, then navbar background -->
     <div class="main container-fluid">
         <section class="content content-container">
-            <div class="row">
+            <div class="section">
                 <div class="col-lg-3 col-lg-offset-8 col-md-4 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12">
                     <div class="back-well">
                         <h1 id="main"> JMThornton </h1>
-                        <h2 id="secondary"> Web Development </h2>
+                        <h4 id="secondary"> Web Development </h4>
                     </div>
                         <div class="buttons btn-group-vertical" role="group" aria-label="navigation group" id="buttons">
                             <a tabindex="1" type="button" role="button" class="btn btn-default btn-lg" href="pages/meet.html">Meet</a>
