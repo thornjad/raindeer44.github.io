@@ -43,15 +43,16 @@
             border-radius: 2%;
         }
 
-        .top-nav-btns a, .top-nav-btns img {
+        .top-nav-btns a,
+        .top-nav-btns img {
             margin-left: 1vw;
             margin-right: 1vw;
         }
 
         hr {
             border: 1px solid black;
-            margin-top: 9vh;
-            margin-bottom: 9vh;
+            margin-top: 4em;
+            margin-bottom: 4em;
         }
 
         .logo {
@@ -60,13 +61,14 @@
 
         .top-nav {
             width: 100vw;
+            height: 6em;
             left: 0;
             position: fixed;
             z-index: 1000;
         }
 
         .phantom {
-            height: 15vh;
+            height: 14em;
         }
 
         .top-nav-btns {
@@ -75,7 +77,7 @@
 
         footer {
             text-align: center;
-            margin-bottom: 30vh;
+            margin-bottom: 20em;
         }
     </style>
 </head>
@@ -92,7 +94,7 @@
         <div class="row">
             <div class="phantom"></div>
             <div class="main">
-                <h1 id="title">HHH HR Pachyderm presentations text markup manual</h1>
+                <h2 id="title">HHH HR Pachyderm Manual (PachyMan)</h2>
 
                 <hr />
 
@@ -163,7 +165,7 @@
 
                 <h2>Intro</h2>
 
-                <p>This is not going to be a class on HTML. I'm not going to give you a whole lot of "why", only "what" and some "how to use". There are fantastic resources online for further learning if you're interested, namely <a href="https://lynda.com">lynda.com</a>                    and <a href="https://freecodecamp.com">freecodecamp.com</a>. And as always, as I happend to be a web developer, feel free to shoot me an email anytime if you need help, have a question or want to talk about anything in this manual
+                <p>This is not going to be a class on HTML. I'm not going to give you a whole lot of "why", only "what" and some "how to use". There are fantastic resources online for further learning if you're interested, namely <a href="https://lynda.com">lynda.com</a>                    and <a href="https://freecodecamp.com">freecodecamp.com</a>. And as always, since I happen to be a web developer, feel free to shoot me an email anytime if you need help, have a question or want to talk about anything in this manual
                     in more detail. You can contact me best at <a href="mailto:jade@jmthornton.net">jade@jmthornton.net</a>. Alright, let's dive in!</p>
 
 
@@ -306,7 +308,7 @@
 
                 <h3><code>&lt;em&gt;</code></h3>
 
-                <p><strong>Emphasis</strong> -- Emphasizing something in HTML means to make it italicized. Yes, there is an <code>&lt;i&gt;</code> tag, but we don't use it anymore (for reasons beyond the scope of this document). <a href="help.html#access">Learn why.</a></em>.</p>
+                <p><strong>Emphasis</strong> -- Emphasizing something in HTML means to make it italicized. Yes, there is an <code>&lt;i&gt;</code> tag, but we don't use it anymore (for reasons beyond the scope of this document). <a href="help.html#access">Learn why</a></em>.</p>
 
                 <pre class="well"><code>&lt;em&gt;I am some very stylish italicized text&lt;/em&gt;
 </code></pre>
@@ -333,7 +335,7 @@ Don't listen to that text, I'm not nosy!
                     </div>
                 </div>
 
-                <p><em><br>I've changed the rendered example a little bit so the <code>&lt;hr&gt;</code> isn't confused with the line's I'm using between tag explanations. The box would not normally show up because of the tag.</em></p>
+                <p><em><br>I've changed the rendered example a little bit so the <code>&lt;hr&gt;</code> isn't confused with the lines I'm using between tag explanations. The box would not normally show up because of the tag.</em></p>
 
                 <hr />
 
@@ -341,7 +343,8 @@ Don't listen to that text, I'm not nosy!
 
                 <h3><code>&lt;img&gt;</code></h3>
 
-                <p><strong>Image</strong> -- Exactly what it says on the tin, this tag puts an image in right where you put the tag. Put the url for the image into the "src" attribute. Remember to put in alternate text in the "alt" attribute. This is done to make the presentation more accessible to those who use screen readers.</p>
+                <p><strong>Image</strong> -- Exactly what it says on the tin, this tag puts an image in right where you put the tag. Put the url for the image into the "src" attribute. Remember to put in alternate text in the "alt" attribute. This is done
+                    to make the presentation more accessible to those who use screen readers.</p>
 
                 <pre class="well"><code>&lt;img src="https://jmthornton.net/assets/images/Placeholder.jpg" alt="A beautiful placeholder image"&gt;
 </code></pre>
@@ -412,7 +415,7 @@ Don't listen to that text, I'm not nosy!
 
                 <h3><code>&lt;strong&gt;</code></h3>
 
-                <p><strong>Strong</strong> -- Use this tag to make text bold. Yes, there is a &lt;b&gt; tag, but we don't use it. <a href="help.html#access">Learn why.</a></p>
+                <p><strong>Strong</strong> -- Use this tag to make text bold. Yes, there is a &lt;b&gt; tag, but we don't use it. <a href="help.html#access">Learn why</a>.</p>
 
                 <pre class="well"><code>&lt;strong&gt;Bold text&lt;/strong&gt;
 </code></pre>
@@ -508,7 +511,7 @@ Don't listen to that text, I'm not nosy!
 
                 <ol>
                     <li>Have your HTML open in a text editor of some sort</li>
-                    <li>Go to [willpeavy.com/minifier](http://www.willpeavy.com/minifier)</li>
+                    <li>Go to <a href="http://www.willpeavy.com/minifier">www.willpeavy.com/minifier</a></li>
                     <li>Copy and paste your code into the text box on the website</li>
                     <li>Click the "Minify" button</li>
                     <li>Copy and paste the minified code into Pachyderm</li>
@@ -526,7 +529,7 @@ Don't listen to that text, I'm not nosy!
 
                 <ol>
                     <li>Have the HTML you want open in Pachyderm</li>
-                    <li>Go to [ctrlq.org/beautifier/](https://ctrlq.org/beautifier/)</li>
+                    <li>Go to <a href="https://ctrlq.org/beautifier/">ctrlq.org/beautifier</a></li>
                     <li>Copy and paste your code into the text box on the website</li>
                     <li>Click the "Beautify Code" button</li>
                     <li>Copy and paste the minified code into your text editor</li>
@@ -612,26 +615,30 @@ Don't listen to that text, I'm not nosy!
 
                 <p>There we have it! That's one of the most HTML-rich slides in the whole presentation. Some slides don't even have any HTML at all! Let's take a look at the code we just talked about:</p>
 
-                <p><b>Research centers and projects by policy area:<br /></b></p>
-
                 <div class="well">
-                <dl>
-                    <dt>Global Policy</dt>
-                    <dd>
-                        <a href="http://bit.ly/2cgGidU">Freeman Center for International Economic Policy</a>
-                    </dd>
-                    <dd>
-                        <a href="http://bit.ly/2cfov9s">International Fellows and Scholars</a>
-                    </dd>
-                    <dt>Urban and Regional Planning</dt>
-                    <dd>
-                        <a href="http://bit.ly/2cfoMsQ">State and Local Policy Program</a>
-                    </dd>
-                </dl>
-            </div>
 
-                <p><br /><br /><br />
-                    <a href="https://www.hhh.umn.edu/people-research/research-centers">Learn more</a></p>
+                    <p><b>Research centers and projects by policy area:<br /></b></p>
+
+
+                    <dl>
+                        <dt>Global Policy</dt>
+                        <dd>
+                            <a href="http://bit.ly/2cgGidU">Freeman Center for International Economic Policy</a>
+                        </dd>
+                        <dd>
+                            <a href="http://bit.ly/2cfov9s">International Fellows and Scholars</a>
+                        </dd>
+                        <dt>Urban and Regional Planning</dt>
+                        <dd>
+                            <a href="http://bit.ly/2cfoMsQ">State and Local Policy Program</a>
+                        </dd>
+                    </dl>
+
+
+                    <p><br /><br /><br />
+                        <a href="https://www.hhh.umn.edu/people-research/research-centers">Learn more</a></p>
+
+                </div>
 
                 <p>Not too shabby!</p>
 
@@ -645,9 +652,9 @@ Don't listen to that text, I'm not nosy!
                     under the HTML5 specification. If you get stuck or don't know what to do, internalize the mantra "Read, Search, Ask". This means:</p>
 
                 <ol>
-                    <li>Read the description of what you're trying to do (RTFM). This could mean looking at this manual again or going online to the HTML5 documentation (go to [W3.com](https://www.w3.org/) or the [Mozilla Developer Network](https://developer.mozilla.org/en-US/))</li>
-                    <li>Search online to see if anyone has had the same problem (they probably have). [Stack Overflow](https://stackoverflow.com/) is by far the best place to look for this sort of thing</li>
-                    <li>Ask someone who knows. Shoot me an email at [jade@jmthornton.net](mailto:jade@jmthornton.net) or talk to Humphrey IT. We'd all love to help you out.</li>
+                    <li>Read the description of what you're trying to do (RTFM). This could mean looking at this manual again or going online to the HTML5 documentation (go to <a href="https://www.w3.org/">www.w3.org</a> or the <a href="https://developer.mozilla.org/en-US">Mozilla Developer Network</a>)</li>
+                    <li>Search online to see if anyone has had the same problem (they probably have). <a href="https://stackoverflow.com/">Stack Overflow</a> is by far the best place to look for this sort of thing</li>
+                    <li>Ask someone who knows. Shoot me an email at <a href="mailto:jade@jmthornton.net">jade@jmthornton.net</a> or talk to Humphrey IT. We'd all love to help you out.</li>
                 </ol>
 
                 <hr />
