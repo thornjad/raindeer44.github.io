@@ -21,51 +21,52 @@
     <link rel="apple-itouch-icon" href="assets/images/favicon.ico" />
     <style>
         :root {
-            background-color: rgba(229, 233, 236, 0.6);
+            background-color: rgba(229, 233, 236, 1);
             margin-left: -1vw;
-        }
-
-        body {
-            background-color: rgba(229, 233, 236, 0.6);
-        }
-
-        .content {
-            text-align: right;
-            right: 0;
             background-image: url("assets/images/background.svg");
-            background-color: rgba(229, 233, 236, 0.6);
             background-position: calc(50% - 12vw) 50%;
             background-repeat: no-repeat;
             background-size: cover;
-            background-color: inherit;
+        }
+
+        body {
+            background-color: transparent;
+        }
+
+        .main {
+            text-align: right;
+            right: 0;
+            background-color: transparent;
             padding-top: 7em;
             height: 100vh;
         }
 
-        .content .section {
+        .main .section {
             margin: 3vw;
         }
 
         #main {
-            font-size: 3.5em;
+            font-size: 3em;
             font-weight: bolder;
+            text-shadow: -1px 0 rgba(229, 233, 236, 0.8), 0 1px rgba(229, 233, 236, 0.8), 1px 0 rgba(229, 233, 236, 0.8), 0 -1px rgba(229, 233, 236, 0.8);
+            background-color: rgba(229, 233, 236, 0.65);
+            border-radius: 8%;
         }
 
         #secondary {
             padding-top: 0.5em;
             font-weight: bolder;
+            text-shadow: -1px 0 rgba(229, 233, 236, 0.8), 0 1px rgba(229, 233, 236, 0.8), 1px 0 rgba(229, 233, 236, 0.8), 0 -1px rgba(229, 233, 236, 0.8);
+            background-color: rgba(229, 233, 236, 0.65);
+            border-radius: 8%;
         }
 
         #buttons {
             padding-top: 0.5em;
         }
 
-        .back-well {
-            background-color: rgba(229, 233, 236, 0.6);
-            box-shadow: none;
-            padding-top: 1em;
-            padding-bottom: 1em;
-            border-radius: 4%;
+        .title {
+            text-align: right;
         }
 
         .btn-default {
@@ -86,23 +87,21 @@
 
 <body>
     <!-- TODO animate name and title in after image loads, then animate navbar buttons in, then navbar background -->
-    <div class="main container-fluid">
-        <section class="content content-container">
-            <div class="section">
-                <div class="col-lg-3 col-lg-offset-8 col-md-4 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12">
-                    <div class="back-well">
-                        <h1 id="main"> JMThornton </h1>
-                        <h4 id="secondary"> Web Development </h4>
-                    </div>
-                        <div class="buttons btn-group-vertical" role="group" aria-label="navigation group" id="buttons">
-                            <a tabindex="1" type="button" role="button" class="btn btn-default btn-lg" href="pages/meet.html">Meet</a>
-                            <a tabindex="2" type="button" role="button" class="btn btn-default btn-lg" href="pages/projects.html">Projects</a>
-                            <a tabindex="3" type="button" role="button" class="btn btn-default btn-lg" href="pages/contact.html">Contact</a>
-                            <a tabindex="4" type="button" role="button" class="btn btn-default btn-lg" href="pages/features.html">Features</a>
-                        </div>
+    <div class="main container">
+        <div class="section">
+            <div class="col-lg-4 col-lg-offset-8 col-md-4 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12">
+                <div class="title">
+                    <h2 id="main"> JMThornton </h2>
+                    <h4 id="secondary"> Web Development </h4>
+                </div>
+                <div class="buttons btn-group-vertical" role="group" aria-label="navigation group" id="buttons">
+                    <a tabindex="1" type="button" role="button" class="btn btn-default btn-lg" href="pages/meet.html">Meet</a>
+                    <a tabindex="2" type="button" role="button" class="btn btn-default btn-lg" href="pages/projects.html">Projects</a>
+                    <a tabindex="3" type="button" role="button" class="btn btn-default btn-lg" href="pages/contact.html">Contact</a>
+                    <a tabindex="4" type="button" role="button" class="btn btn-default btn-lg" href="pages/features.html">Features</a>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
