@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PachyMan | JMThornton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jade Thornton" />
+    <meta name="description" content="Manual for maintaining and editing HR Pachyderm presentations at the Humphrey School of Public Affairs" />
+    <meta name="keywords" content="web development, web design, internet programming, internet development, jade thornton, hhh, humphrey school, pachyderm, human resources, university of minnesota, umn, hubert humphrey" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="google-site-verification" content="JUM1Dl9n9ic9xPMb03Nzf4NgW_-8PWZrJ4eJGC_PoYM" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../assets/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/style/main.css" type="text/css" />
+    <link rel="stylesheet" href="../../assets/style/navigation.css" type="text/css" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link rel="apple-itouch-icon" href="../../assets/images/favicon.ico" />
+    <style>
+        body {
+            text-align: left;
+            font-size: 20px;
+        }
+
+        dd {
+            padding-left: 2vw;
+        }
+
+        .main {
+            margin-left: 8.33vw;
+            margin-right: 8.33vw;
+        }
+
+        .btn {
+            color: inherit;
+        }
+
+        pre {
+            font-size: 1em;
+        }
+
+        .well {
+            background-color: #DEDEDE;
+            border-radius: 2%;
+        }
+
+        .top-nav-btns a,
+        .top-nav-btns img {
+            margin-left: 1vw;
+            margin-right: 1vw;
+        }
+
+        hr {
+            border: 1px solid black;
+            margin-top: 3em;
+            margin-bottom: 3em;
+        }
+
+        .logo {
+            width: 48px;
+        }
+
+        .top-nav {
+            width: 100vw;
+            height: 4.2em;
+            left: 0;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        .phantom {
+            height: 9em;
+        }
+
+        .top-nav-btns {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-bottom: 20em;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="well top-nav">
+        <div class="top-nav-btns">
+            <a href="../index.html"><img src="../../assets/images/icon.svg" alt="JMThornton logo" class="logo"></a>
+            <a href="#table-of-contents" role="button" type="button" class="btn">Contents</a>
+            <a href="../help.html" role="button" type="button" class="btn">Help</a>
+            <a href="pachyfaq.html" role="button" type="button" class="btn">FAQ</a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="phantom"></div>
+
+        <h2 id="setupoperaforsecurebrowsing">Set up Opera for secure browsing</h2>
+
+        <p><strong>PUT IN TIME TO COMPLETE SET UP AND COST</strong></p>
+
+        <p>Opera is a well designed and highly functioning web browser with hundreds of millions of users worldwide, built on the Blink engine from Chromium. Many features now common to all web browsers, such as tabs, private browsing and pop-up blocking,
+            originated by Opera. The simple layout, extensive functionality and built-in VPN service make it a great candidate for browsing the web safely and securely. This tutorial will help you set up the essentials to help keep your personal data
+            under your control.</p>
+
+        <h3 id="tldr">TL;DR</h3>
+
+        <ol>
+            <li><a href="https://www.opera.com/download">Download and install Opera</a></li>
+
+            <li>Click the <em>VPN</em> icon in the address bar and make sure it's <em>on</em></li>
+
+            <li>Settings > Privacy and Security</li>
+        </ol>
+
+        <ul>
+            <li>check <em>show advanced settings</em></li>
+
+            <li>check <em>Block ads</em> and <em>Send a ‘Do Not Track’ request with your browsing traffic</em></li>
+
+            <li>uncheck <em>autofill</em> and <em>save passwords</em></li>
+
+            <li>WebRTC > <em>Disable non-proxied UDP</em></li>
+        </ul>
+
+        <ol>
+            <li>Install <a href="https://addons.opera.com/en/extensions/details/https-everywhere/"><em>HTTPS Everywhere</em></a></li>
+
+            <li>Install <a href="https://addons.opera.com/en/extensions/details/privacy-badger/?display=ru"><em>Privacy Badger</em></a></li>
+        </ol>
+
+        <h3 id="getopera">Get Opera</h3>
+
+        <p>If you haven't already, <a href="https://www.opera.com/download">download and install Opera</a>. The set up process is very quick, but does require agreement to terms and a privacy policy. I recommend taking a look at the privacy policy to make
+            sure you really agree.</p>
+
+        <h3 id="operasettings">Opera Settings</h3>
+
+        <p>The settings can be easily accessed in any of the following ways:</p>
+
+        <ul>
+            <li>The left-hand navigation bar on Speed Dial</li>
+
+            <li>The gear icon at the top right in Speed Dial (click <em>Go to browser settings</em> at the bottom)</li>
+
+            <li>Menu > settings</li>
+
+            <li><kbd>alt + p</kbd></li>
+        </ul>
+
+        <h5 id="beforewewalkthroughthesettingsgototheprivacyandsecuritytabscrolltothebottomandchecktheoptionshowadvancedsettings">Before we walk through the settings, go to the <em>Privacy and security</em> tab, scroll to the bottom and check the option <em>Show advanced settings</em></h5>
+
+        <h5 id="browsertab">Browser tab</h5>
+
+        <ol>
+            <li>Search settings: switch search engine to DuckDuckGo</li>
+
+            <li>User interface: check the option <em>Show the full URL in combined search and address bar</em>. This allows you to always easily see exactly what site you're on.</li>
+
+            <li>Battery saver: this one isn't a security issue, but if you're on a laptop, the battery saver is a good idea.</li>
+        </ol>
+
+        <h5 id="websitestab">Websites tab</h5>
+
+        <ol>
+            <li>JavaScript: for stricter security, choose <em>Do not allow any site to run JavaScript</em>. However, this may break many websites. If you would like to have functioning websites more than strict security, leave this option alone.</li>
+
+            <li>Location: choose the <em>ask me ...</em> option.</li>
+
+            <li>Notifications: choose the <em>ask me ...</em> option.</li>
+
+            <li>Microphone: choose the <em>ask me ...</em> option.</li>
+
+            <li>Camera: choose the <em>ask me ...</em> option.</li>
+
+            <li>MIDI full control: choose the <em>ask me ...</em> option.</li>
+        </ol>
+
+        <h5 id="privacyandsecuritytab">Privacy and Security tab</h5>
+
+        <ol>
+            <li>Block ads: check the box. (This blocks many malicious ads which track your behavior across websites)</li>
+
+            <li>Privacy: only <em>Protect me from malicious sites</em> and <em>Send a ‘Do Not Track’ request with your browsing traffic</em> should be checked</li>
+
+            <li>VPN: check the box to enable the VPN. <a href="#">What's a VPN?</a></li>
+
+            <li>Autofill: uncheck this box.</li>
+
+            <li>Passwords: uncheck this box. Instead use an independent password manager like <a href="#">LastPass</a> or <a href="#">KeePassX</a>.</li>
+
+            <li>WebRTC: choose <em>Disable non-proxied UDP</em>. This can stop the built-in VPN from leaking your real IP address.</li>
+
+            <li>Cookies: the recommendation here is to choose <em>Allow local data to be set</em>, and check <em>block third-party cookies and site data</em>. Don't worry too much about this one, we'll cover cookie-blocking in just a moment.</li>
+        </ol>
+
+        <h3 id="addingmoresecuritywithextensions">Adding more security with extensions</h3>
+
+        <ol>
+            <li>Get <a href="https://addons.opera.com/en/extensions/details/https-everywhere/"><em>HTTPS Everywhere</em></a>. This extension forces Opera to get the encrypted version of any website that has one.</li>
+
+            <li>Get <a href="https://addons.opera.com/en/extensions/details/privacy-badger/?display=ru"><em>Privacy Badger</em></a>. Go through the intro page to learn how <em>Privacy Badger works</em>.</li>
+        </ol>
+
+        <p>Now, in Opera, go to <a href="opera://extensions/">opera://extensions/</a>. Find <em>HTTPS Everywhere</em> and check the box <em>Allow in private mode</em>. Do the same for <em>Privacy Badger</em>.</p>
+
+    </div>
+</body>
+
+</html>
