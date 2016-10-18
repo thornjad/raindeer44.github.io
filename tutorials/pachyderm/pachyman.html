@@ -76,6 +76,10 @@
             text-align: center;
         }
 
+        .lower-btn {
+            float: right;
+        }
+
         footer {
             text-align: center;
             margin-bottom: 20em;
@@ -138,7 +142,8 @@
 
                 <h3>Hi there!</h3>
 
-                <p>My name is Jade Thornton. While I did not create the new employee orientation Pachyderm presentations, I have done some extensive editing and maintenance. The majority of changes I made use hypertext markup language (HTML), so I created this manual as a reference for anyone who might be maintaining what I've written. This manual is generally true for all HTML, but I've simplified some details which aren't relevant to working with the Humphrey School instance of Pachyderm.</p>
+                <p>My name is Jade Thornton. While I did not create the new employee orientation Pachyderm presentations, I have done some extensive editing and maintenance. The majority of changes I made use hypertext markup language (HTML), so I created
+                    this manual as a reference for anyone who might be maintaining what I've written. This manual is generally true for all HTML, but I've simplified some details which aren't relevant to working with the Humphrey School instance of Pachyderm.</p>
 
                 <div class="well">
                     <h4>If you are already comfortable with HTML, you need not read past this insert</h4>
@@ -155,10 +160,11 @@
                     I do recommend using a text editor rather than just using the text box in Pachyderm, however, for one good reason: syntax highlighting. This means that different HTML elements will have different colors so you can very quickly tell
                     the difference between a tag, some text, a URL, etc.</p>
 
-                <p>If you're on Windows, Notepad will already be installed and works okay for quick editing, but does not have the very helpful syntax highlighting. A wonderful improved version, called Notepad++ (pronounced notepad plus plus), is much better at HTML. <a href="https://notepad-plus-plus.org/download/v7.html">Download and install it for free</a>.</p>
+                <p>If you're on Windows, Notepad will already be installed and works okay for quick editing, but does not have the very helpful syntax highlighting. A wonderful improved version, called Notepad++ (pronounced notepad plus plus), is much better
+                    at HTML. <a href="https://notepad-plus-plus.org/download/v7.html">Download and install it for free</a>.</p>
 
-                <p>If you're on a UNIX or UNIX-like machine (OS X, macOS, Linux, FreeBSD, etc.), VIM comes pre-installed and is a great choice for fast editing. Just type "vim" followed by the file name in the terminal. However, using VIM has a steep learning curve.
-                    If you're not going to be working with it a lot, it's probably not worth the time you'd have to invest.</p>
+                <p>If you're on a UNIX or UNIX-like machine (OS X, macOS, Linux, FreeBSD, etc.), VIM comes pre-installed and is a great choice for fast editing. Just type "vim" followed by the file name in the terminal. However, using VIM has a steep learning
+                    curve. If you're not going to be working with it a lot, it's probably not worth the time you'd have to invest.</p>
 
                 <p>For all users, I cannot recommend more highly the free and open-source text editor <a href="https://atom.io/">Atom</a>. It's what I'm using to write this right now, and there is nothing that can beat it. On the other hand, others may disagree
                     on the awesomeness of Atom. If you're one of those people, check out <a href="https://www.eclipse.org/">Eclipse</a>, <a href="https://www.sublimetext.com/">Sublime</a> or <a href="https://kate-editor.org/">Kate</a>.</p>
@@ -167,26 +173,31 @@
 
                 <h2>Intro</h2>
 
-                <p>This is not going to be a class on HTML. I'm not going to give you a whole lot of "why", mostly "what" and "how to use". There are fantastic resources online for further learning if you're interested, namely <a href="https://lynda.com">lynda.com</a> (free for University employees, go to <a href="http://lynda.umn.edu">lynda.umn.edu</a>) and <a href="https://freecodecamp.com">freecodecamp.com</a>. And as always, since I happen to be a web developer, feel free to shoot me an email anytime if you need help, have a question or want to talk about anything in this manual
-                    in more detail. You can contact me best at <a href="mailto:jade@jmthornton.net">jade@jmthornton.net</a>. Alright, let's dive in!</p>
+                <p>This is not going to be a class on HTML. I'm not going to give you a whole lot of "why", mostly "what" and "how to use". There are fantastic resources online for further learning if you're interested, namely <a href="https://lynda.com">lynda.com</a>                    (free for University employees, go to <a href="http://lynda.umn.edu">lynda.umn.edu</a>) and <a href="https://freecodecamp.com">freecodecamp.com</a>. And as always, since I happen to be a web developer, feel free to shoot me an email
+                    anytime if you need help, have a question or want to talk about anything in this manual in more detail. You can contact me best at <a href="mailto:jade@jmthornton.net">jade@jmthornton.net</a>. Alright, let's dive in!</p>
 
 
                 <div class="phantom" id="basics"></div>
 
                 <h2>Basics</h2>
 
-                <p>First off, you need to know what I mean when I say "tag". That basically means anything inside <code>&lt;&gt;</code>, angle brackets. These are what tell Pachyderm what you want to do with the text following the tag (make it bold, make it a link, turn it into a list, etc.). Almost every tag in HTML must be followed by a closing tag, which will look something like <code>&lt;/&gt;</code>. This tells Pachyderm where the end of that tag is. Look for this in the examples below.</p>
+                <p>First off, you need to know what I mean when I say "tag". That basically means anything inside <code>&lt;&gt;</code>, angle brackets. These are what tell Pachyderm what you want to do with the text following the tag (make it bold, make
+                    it a link, turn it into a list, etc.). Almost every tag in HTML must be followed by a closing tag, which will look something like <code>&lt;/&gt;</code>. This tells Pachyderm where the end of that tag is. Look for this in the examples
+                    below.
+                </p>
 
-                <p>Secondly, you need to know the right order in which to close tags. This means the last tag you open is the first tag you close. If we have an imaginary tag called <code>&lt;foo&gt;</code> and another one called <code>&lt;bar&gt;</code>, I can use them both on the same text at the same time, but I have to close them in the right order:</p>
+                <p>Secondly, you need to know the right order in which to close tags. This means the last tag you open is the first tag you close. If we have an imaginary tag called <code>&lt;foo&gt;</code> and another one called <code>&lt;bar&gt;</code>,
+                    I can use them both on the same text at the same time, but I have to close them in the right order:</p>
 
                 <pre class="well"><code>&lt;foo&gt;&lt;bar&gt;Some very special foobar text&lt;/bar&gt;&lt;/foo&gt;
 </code></pre>
 
-                <p>Notice that I opened the <code>&lt;foo&gt;</code> tag first, so I close it with <code>&lt;/foo&gt;</code> last. <code>&lt;bar&gt;</code> is on the <em>inside</em> of <code>&lt;foo&gt;</code> so it has to be closed with <code>&lt;/bar&gt;</code> before I close <code>&lt;foo&gt;</code>. Keeping track of this ordering might be somewhat tedious when you're not used to it, but it's very important to do.</p>
+                <p>Notice that I opened the <code>&lt;foo&gt;</code> tag first, so I close it with <code>&lt;/foo&gt;</code> last. <code>&lt;bar&gt;</code> is on the <em>inside</em> of <code>&lt;foo&gt;</code> so it has to be closed with <code>&lt;/bar&gt;</code>                    before I close <code>&lt;foo&gt;</code>. Keeping track of this ordering might be somewhat tedious when you're not used to it, but it's very important to do.</p>
 
                 <p>Thirdly, Pachyderm text boxes have a maximum size of 1500 characters. One way to help keep under this limit is to shorten all your links. I like to use <a href="https://bitly.com/?main">Bitly</a> for page links and <a href="https://sli.mg/">Slimg</a>                    for images.</p>
 
-                <p>Finally, you need to understand how I've structured this manual. Each entry is about a single tag. They are in alphabetical order and separated by horizontal lines. The heading shows what the tag looks like, and the name and explanation follow. Under that, there is a code block, which contains an example of how to use the tag. Beneath the block is what the code in the code block renders to. <em>When I say render, I mean the text that Pachyderm (or a web browser) would show if you put in the code.</em></p>
+                <p>Finally, you need to understand how I've structured this manual. Each entry is about a single tag. They are in alphabetical order and separated by horizontal lines. The heading shows what the tag looks like, and the name and explanation
+                    follow. Under that, there is a code block, which contains an example of how to use the tag. Beneath the block is what the code in the code block renders to. <em>When I say render, I mean the text that Pachyderm (or a web browser) would show if you put in the code.</em></p>
 
                 <p>If you find a bug, error, want to make a change or have any questions, take a gander at the <a href="help.html">help page</a>. You can visit this page any time by using the "Help" button at the top of the screen.</p>
 
@@ -210,7 +221,8 @@
 
                 <h3><code>&lt;br&gt;</code>, also <code>&lt;br /&gt;</code></h3>
 
-                <p><strong>Line Break</strong> -- This handy little tag is extremely convenient when working with Pachyderm. It inserts a line break wherever you want it. It has the same effect as pressing enter in a text editor (like Atom or Eclipse) or word processor (like Word or Writer). See the <a href="#minimization">minimization section</a> for an explanation of why this tag is so important in Pachyderm. <strong>Note:</strong> <em>the line break tag is an exception to the rule of needing a closing tag -- it's "self-closing". This means you only need one tag to get the job done.</em></p>
+                <p><strong>Line Break</strong> -- This handy little tag is extremely convenient when working with Pachyderm. It inserts a line break wherever you want it. It has the same effect as pressing enter in a text editor (like Atom or Eclipse) or
+                    word processor (like Word or Writer). See the <a href="#minimization">minimization section</a> for an explanation of why this tag is so important in Pachyderm. <strong>Note:</strong> <em>the line break tag is an exception to the rule of needing a closing tag -- it's "self-closing". This means you only need one tag to get the job done.</em></p>
 
                 <pre class="well"><code>Go placidly amid the noise and haste,&lt;br&gt;and remember what peace there may be in silence.
 </code></pre>
@@ -401,7 +413,8 @@ Don't listen to that text, I'm not nosy!
 
                 <h3><code>&lt;p&gt;</code></h3>
 
-                <p><strong>Paragraph</strong> -- While simply writing out text in Pachyderm works just fine, using <code>&lt;p&gt;</code> is sometimes a nice way to separate the text from other nearby parts. In Pachyderm, this does <em>not</em> change the formatting of the text.</p>
+                <p><strong>Paragraph</strong> -- While simply writing out text in Pachyderm works just fine, using <code>&lt;p&gt;</code> is sometimes a nice way to separate the text from other nearby parts. In Pachyderm, this does <em>not</em> change the
+                    formatting of the text.</p>
 
                 <pre class="well"><code>&lt;p&gt;How now brown cow?&lt;/p&gt;
 </code></pre>
@@ -490,8 +503,8 @@ Don't listen to that text, I'm not nosy!
                 </ul>
 
                 <p>If you've already explored the presentations, which you probably have, you'll notice something about what I just said. They're not entirely true. There is at least one exception to every bullet I listed above. The simple reason is, in
-                    those situations, I made a design decision based on the specific situation. You, as the editor and/or maintainer of the presentation have the full power to make your own design decisions. I only ask that you adhere
-                    to the following design rule:</p>
+                    those situations, I made a design decision based on the specific situation. You, as the editor and/or maintainer of the presentation have the full power to make your own design decisions. I only ask that you adhere to the following
+                    design rule:</p>
 
                 <p><strong><em>Don't make the user think</em></strong>. Make features and options obvious; if you have to explain something to the user, it means you need to rethink it yourself. We want the user to enjoy using these presentations, and that
                     means they shouldn't notice most of it; it should be automatic.</p>
@@ -522,7 +535,8 @@ Don't listen to that text, I'm not nosy!
 
                 <h2>Beautification (aka the opposite of minification)</h2>
 
-                <p>This might be an important step in decoding what I've put up on Pachyderm, and for maintaining the presentations in general. If you're using the Atom editor (the best one), install the atom-beautify package. If you're on some other editor, or don't like Atom packages, I recommend the following steps.</p>
+                <p>This might be an important step in decoding what I've put up on Pachyderm, and for maintaining the presentations in general. If you're using the Atom editor (the best one), install the atom-beautify package. If you're on some other editor,
+                    or don't like Atom packages, I recommend the following steps.</p>
 
                 <ol>
                     <li>Have the HTML you want to beautify open in Pachyderm</li>
@@ -586,7 +600,7 @@ Don't listen to that text, I'm not nosy!
 
                 <pre class="well"><code>1  &lt;strong&gt;Research centers and projects by policy area:&lt;br /&gt;&lt;/strong&gt;</code></pre>
 
-                <p>Here we open with a <code>&lt;strong&gt;</code> tag. Recall that this turns the following line of text bold. At the end, we see a <code>&lt;br /&gt;</code> which causes a line break after this text (<code>&lt;br&gt;</code> and <code>&lt;br /&gt;</code> are equivalent). At the very end, we close the strong tag.</p><br />
+                <p>Here we open with a <code>&lt;strong&gt;</code> tag. Recall that this turns the following line of text bold. At the end, we see a <code>&lt;br /&gt;</code> which causes a line break after this text (<code>&lt;br&gt;</code> and <code>&lt;br /&gt;</code>                    are equivalent). At the very end, we close the strong tag.</p><br />
 
                 <pre class="well"><code>2  &lt;dl&gt;</code></pre>
 
@@ -602,11 +616,10 @@ Don't listen to that text, I'm not nosy!
 
                 <pre class="well"><code>5          &lt;a href="http://bit.ly/2cgGidU"&gt;Freeman Center for International Economic Policy&lt;/a&gt;</code></pre>
 
-                <p>Here's our description definition, which happens to be a link. Links are created using the anchor tag. Inside of the opening anchor tag, we add an attribute called <code>href</code>, which has a value of "http://bit.ly/2cgGidU".
-                    Remember to put the link in quotes. This link is shortened using Bitly to conserve characters (recall that Pachyderm has a character limit of 1500). At the end of the line, we remember to
-                    close the anchor.</p><br />
+                <p>Here's our description definition, which happens to be a link. Links are created using the anchor tag. Inside of the opening anchor tag, we add an attribute called <code>href</code>, which has a value of "http://bit.ly/2cgGidU". Remember
+                    to put the link in quotes. This link is shortened using Bitly to conserve characters (recall that Pachyderm has a character limit of 1500). At the end of the line, we remember to close the anchor.</p><br />
 
-                    <pre class="well"><code>6      &lt;/dd&gt;</code></pre>
+                <pre class="well"><code>6      &lt;/dd&gt;</code></pre>
 
                 <p>That's the end of our definition, so we close it with <code>&lt;/dd&gt;</code></p><br />
 
@@ -685,12 +698,15 @@ Don't listen to that text, I'm not nosy!
 
                 <hr />
 
+                <a href="../../pages/features.html" role="button" type="button" class="btn lower-btn">More tutorials and guides</a>
+                <a href="../help.html" role="button" type="button" class="btn lower-btn">Found an error or bug?</a>
+
                 <div class="phantom" id="about"></div>
 
                 <footer>
                     <h5>The Pachyderm Manual (PachyMan) was created in 2016 by Jade Thornton for the Human Resources department of the Humphrey School of Public Affairs at the University of Minnesota, to assist employees in editing an maintaining the new employee orientation presentations. It is maintained here on <a href="https://jmthornton.net">JMThornton.net</a> to keep it easily maintainable and accessible. The original source (in markdown) and PDF of this manual is located on the University of Minnesota shared "Administration" drive in "S:\Finance\Human Resources\Jade\Pachyderm\". If you do not have access to this drive, contact your supervisor and/or Humphrey ITS. This web page is adapted from the source, and is more updated.</h5>
 
-                        <h5>If you have noticed a bug, error or would like to make any changes, please visit the <a href="help.html">help page</a>. Your contributions are appreciated.</h5>
+                    <h5>If you have noticed a bug, error or would like to make any changes, please visit the <a href="help.html">help page</a>. Your contributions are appreciated.</h5>
 
                     <h5>This manual is <a href="https://github.com/Raindeer44/raindeer44.github.io/tree/master/hhh/pachyman.html">maintained on GitHub</a> and the website is open source <a href="https://github.com/Raindeer44/raindeer44.github.io">hosted with love on GitHub</a>.</h5>
 
