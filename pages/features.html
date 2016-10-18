@@ -37,23 +37,45 @@
             margin-top: 20px;
         }
 
-        .section {
-          margin-bottom: 7em;
-        }
+        @media screen and (min-width: 800px) {
+            .section-left {
+              float: left;
+            }
 
-        .well {
-            padding-top: 6vh;
-            padding-bottom: 6vh;
+            .section-right {
+              float: right;
+            }
+
+            .section {
+                max-width: 45%;
+            }
         }
 
         .column {
-          max-width: 800px;
-          margin: auto;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            border-radius: 5%;
+            padding-top: 3em;
+            padding-bottom: 7em;
+            padding-left: 9vw;
+            padding-right: 9vw;
+            display: inline-block;
         }
 
-        .column h6 {
-          text-align: left;
-          margin-left: 10vw;
+        .section {
+            text-align: left;
+            margin-bottom: 10em;
+        }
+
+        .section-heading {
+          font-weight: bold;
+          text-align: center;
+        }
+
+        .li {
+          margin-top: 1.5em;
+          margin-bottom: 1.5em;
         }
     </style>
 </head>
@@ -78,19 +100,27 @@
     <div class="content content-container container-fluid">
         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
             <section class="about">
-                <div class="well this-well">
-                  <div class="column">
-                    <div class="tutorials section">
-                        <h5>Tutorials</h5>
-                        <hr>
-                        <h6><a href="../tutorials/pachyderm/pachyman.html">Pachyderm HTML manual for the Humphrey School (PachyMan)</a></h6>
+                <div>
+                    <div class="column">
+                        <div class="tutorials">
+                            <h5 class="section-heading">Tutorials</h5>
+                            <hr>
+                            <div class="listing">
+                              <div class="pachyderm section section-left">
+                                <h6 class="title"><strong>Pachyderm</strong></h6>
+                                <h6 class="li"><a href="../tutorials/pachyderm/pachyman.html">Pachyderm HTML manual for the Humphrey School (PachyMan)</a></h6>
+                              </div>
+                              <div class="set-up-guides section section-right">
+                                <h6 class="title"><strong>Set-Up Guides</strong></h6>
+                                <h6 class="li"><a href="">Set up Opera for secure browsing</a></h6>
+                                <h6 class="li"><a href="">Set up Chrome for secure browsing</a></h6>
+                                <h6 class="li"><a href="">Set up Firefox for secure browsing</a></h6>
+                                <h6 class="li"><a href="">Set up Vivaldi for secure browsing</a></h6>
+                                <h6 class="li"><a href="">Set up Brave for secure browsing</a></h6>
+                              </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="set-up-guides section">
-                        <h5>Set Up Guides</h5>
-                        <hr />
-
-                    </div>
-                  </div>
                 </div>
             </section>
         </div>
