@@ -37,9 +37,23 @@
             margin-top: 20px;
         }
 
+        .section {
+          margin-bottom: 7em;
+        }
+
         .well {
             padding-top: 6vh;
             padding-bottom: 6vh;
+        }
+
+        .column {
+          max-width: 800px;
+          margin: auto;
+        }
+
+        .column h6 {
+          text-align: left;
+          margin-left: 10vw;
         }
     </style>
 </head>
@@ -62,27 +76,34 @@
         </div>
     </nav>
     <div class="content content-container container-fluid">
-            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-                <section class="about">
-                    <div class="well this-well">
-                        <div class="hhh">
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <section class="about">
+                <div class="well this-well">
+                  <div class="column">
+                    <div class="tutorials section">
                         <h5>Tutorials</h5>
                         <hr>
-                        <h6><a href="../hhh/pachyman.html">Pachyderm Manual (PachyMan)</a></h6>
+                        <h6><a href="../tutorials/pachyderm/pachyman.html">Pachyderm HTML manual for the Humphrey School (PachyMan)</a></h6>
                     </div>
+                    <div class="set-up-guides section">
+                        <h5>Set Up Guides</h5>
+                        <hr />
+
                     </div>
-                </section>
+                  </div>
+                </div>
+            </section>
         </div>
     </div>
     <footer class="footer">
         <div class="container">
             <div class="row foot">
-                    <div class="freespeech">
-                        <a tabindex="" href="https://github.com/Raindeer44/raindeer44.github.io"> Hosted on GitHub with love <i class="fa fa-github"></i> </a>
-                    </div>
-                    <div class="license-text">
-                        <a tabindex="" href="../LICENSE"> Copyright (C) 2016 Jade Thornton </a>
-                    </div>
+                <div class="freespeech">
+                    <a tabindex="" href="https://github.com/Raindeer44/raindeer44.github.io"> Hosted on GitHub with love <i class="fa fa-github"></i> </a>
+                </div>
+                <div class="license-text">
+                    <a tabindex="" href="../LICENSE"> Copyright (C) 2016 Jade Thornton </a>
+                </div>
             </div>
         </div>
     </footer>
