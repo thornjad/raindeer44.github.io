@@ -100,5 +100,28 @@ a:active, a:hover {
 }
 
 .end-btns {
-  float: right;
+    float: right;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+/* jflo */
+
+.jfloat-right, .jfloat-right-switch {
+    float: right;
+}
+
+.jfloat-left, .jfloat-left-switch {
+    float: left;
+}
+
+@media (max-width: 800px) {
+  .jfloat-right-switch, .jfloat-left-switch {
+      float: none;
+      clear: both;
+  }
 }
