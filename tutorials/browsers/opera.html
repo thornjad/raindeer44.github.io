@@ -12,6 +12,7 @@
     <meta name="google-site-verification" content="JUM1Dl9n9ic9xPMb03Nzf4NgW_-8PWZrJ4eJGC_PoYM" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../assets/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../../assets/style/main.css" type="text/css" />
     <link rel="stylesheet" href="../../assets/style/navigation.css" type="text/css" />
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
@@ -20,10 +21,6 @@
         body {
             text-align: left;
             font-size: 20px;
-        }
-
-        dd {
-            padding-left: 2vw;
         }
 
         .main {
@@ -44,12 +41,6 @@
             border-radius: 2%;
         }
 
-        hr {
-            border: 1px solid black;
-            margin-top: 3em;
-            margin-bottom: 3em;
-        }
-
         .phantom {
             height: 9em;
         }
@@ -59,26 +50,73 @@
             margin-bottom: 20em;
             font-size: 1em;
         }
+
+        .info-box {
+            background-color: #DEDEDE;
+            color: #0C0C0C;
+            border: none;
+            border-radius: 2%;
+            max-width: 500px;
+            margin: 3em 6vw;
+            padding: 1em;
+        }
+
+        .info-box div {
+            margin-bottom: 0.1em;
+            margin-top: 0.1em;
+        }
+
+        p,
+        ul,
+        ol {
+            margin: 2em;
+        }
+
+        ol ul {
+            margin: 1em 3em;
+        }
+
+        .fa {
+            margin-right: 0.9em;
+        }
     </style>
 </head>
 
 <body>
-    <div class="well top-nav">
-        <div class="top-nav-btns">
-            <a href="../../index.html"><img src="../../assets/images/icon.svg" alt="JMThornton logo" class="logo"></a>
-            <a href="../help.html" role="button" type="button" class="btn">Help</a>
+    <div class="container-fluid">
+        <div class="top-nav navbar">
+            <div class="top-nav-btns container-fluid">
+                <div class="navbar-header">
+                    <a href="../../index.html" class="navbar-brand img-responsive"><img src="../../assets/images/icon.svg" alt="JMThornton logo" class="logo"></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="../help.html" role="button" type="button" class="btn">Help</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="container-fluid">
-        <div class="phantom"></div>
+        <article class="setup-opera">
 
-        <h2 id="setupoperaforsecurebrowsing">Set up Opera for secure browsing</h2>
 
-        <p><strong>PUT IN TIME TO COMPLETE SET UP AND COST</strong></p>
+            <div class="phantom"></div>
 
-        <p>Opera is a well designed and highly functioning web browser with hundreds of millions of users worldwide, built on the Blink engine from Chromium. Many features now common to all web browsers, such as tabs, private browsing and pop-up blocking,
+            <h1 id="title">Set up Opera for secure browsing</h2>
+        <h3>A guide to setting up the Opera browser for a safe and secure web browsing experience</h3>
+
+        <div class="info-box">
+          <h5>
+              <div><strong><i class="fa fa-clock-o"></i></strong> this will take about 10 mins</div><br>
+              <div><strong><i class="fa fa-coffee"></i></strong> low difficulty</div><br>
+              <div><strong><i class="fa fa-money"></i></strong> $0</div><br>
+          </h5>
+        </div>
+
+        <p><b class="head">Opera</b> is a well designed and highly functioning web browser with hundreds of millions of users worldwide, built on the Blink engine from Chromium. Many features now common to all web browsers, such as tabs, private browsing and pop-up blocking,
             originated by Opera. The simple layout, extensive functionality and built-in VPN service make it a great candidate for browsing the web safely and securely. This tutorial will help you set up the essentials to help keep your personal data
             under your control.</p>
+
+            <div class="well">
 
         <h3 id="tldr">TL;DR</h3>
 
@@ -87,8 +125,8 @@
 
             <li>Click the <em>VPN</em> icon in the address bar and make sure it's <em>on</em></li>
 
-            <li>Settings > Privacy and Security</li>
-        </ol>
+            <li>Settings > Privacy and Security: <br>
+
 
         <ul>
             <li>check <em>show advanced settings</em></li>
@@ -98,20 +136,26 @@
             <li>uncheck <em>autofill</em> and <em>save passwords</em></li>
 
             <li>WebRTC > <em>Disable non-proxied UDP</em></li>
-        </ul>
+        </ul></li>
 
-        <ol>
+
             <li>Install <a href="https://addons.opera.com/en/extensions/details/https-everywhere/"><em>HTTPS Everywhere</em></a></li>
 
             <li>Install <a href="https://addons.opera.com/en/extensions/details/privacy-badger/?display=ru"><em>Privacy Badger</em></a></li>
         </ol>
+      </div>
+
 
         <h3 id="getopera">Get Opera</h3>
+        <hr>
 
         <p>If you haven't already, <a href="https://www.opera.com/download">download and install Opera</a>. The set up process is very quick, but does require agreement to terms and a privacy policy. I recommend taking a look at the privacy policy to make
             sure you really agree.</p>
 
+        <p>To move through this guide as fast as possible, open the guide (<a href="https://jmthornton.net/tutorials/browsers/opera.html">https://jmthornton.net/tutorials/browsers/opera.html</a>) in Opera after you install it.</p>
+
         <h3 id="operasettings">Opera Settings</h3>
+        <hr>
 
         <p>The settings can be easily accessed in any of the following ways:</p>
 
@@ -125,7 +169,7 @@
             <li><kbd>alt + p</kbd></li>
         </ul>
 
-        <h5 id="beforewewalkthroughthesettingsgototheprivacyandsecuritytabscrolltothebottomandchecktheoptionshowadvancedsettings">Before we walk through the settings, go to the <em>Privacy and security</em> tab, scroll to the bottom and check the option <em>Show advanced settings</em></h5>
+        <div class="well"><h5>Before we walk through the settings, go to the <em>Privacy and security</em> tab, scroll to the bottom and check the option <em>Show advanced settings</em></h5></div>
 
         <h5 id="browsertab">Browser tab</h5>
 
@@ -160,7 +204,7 @@
 
             <li>Privacy: only <em>Protect me from malicious sites</em> and <em>Send a ‘Do Not Track’ request with your browsing traffic</em> should be checked</li>
 
-            <li>VPN: check the box to enable the VPN. <a href="#">What's a VPN?</a></li>
+            <li>VPN: check the box to enable the VPN. <!--TODO<a href="#">What's a VPN?</a>--></li>
 
             <li>Autofill: uncheck this box.</li>
 
@@ -172,6 +216,7 @@
         </ol>
 
         <h3 id="addingmoresecuritywithextensions">Adding more security with extensions</h3>
+        <hr>
 
         <ol>
             <li>Get <a href="https://addons.opera.com/en/extensions/details/https-everywhere/"><em>HTTPS Everywhere</em></a>. This extension forces Opera to get the encrypted version of any website that has one.</li>
@@ -181,6 +226,21 @@
 
         <p>Now, in Opera, go to <a href="opera://extensions/">opera://extensions/</a>. Find <em>HTTPS Everywhere</em> and check the box <em>Allow in private mode</em>. Do the same for <em>Privacy Badger</em>.</p>
 
+        <h3>All done!</h3>
+        <hr>
+
+        <p>Congratulations! Your Opera browser is now set up to view the web safely and securely. <!--TODO To be any more secure, you'd have to be using Tor --> Happy browsing!</p>
+
+        <hr>
+        <br>
+
+        <div class="end-btns">
+          <a href="../../pages/features.html" role="button" type="button" class="btn lower-btn">More tutorials and guides</a>
+          <a href="../help.html" role="button" type="button" class="btn lower-btn">Found an error or bug?</a>
+        </div>
+
+        <div class="phantom"></div>
+      </article>
     </div>
 </body>
 
