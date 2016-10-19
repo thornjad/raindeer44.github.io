@@ -99,7 +99,7 @@
 }
 
 .navbar-brand img {
-    max-width: 2em;
+    width: 48px;
     margin-top: -0.5em;
 }
 
@@ -109,6 +109,7 @@
 }
 
 .top-nav {
+  background-color: rgba(229, 233, 236, 0.9);
     width: 100vw;
     height: 4.2em;
     left: 0;

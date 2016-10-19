@@ -20,17 +20,33 @@ body {
     margin: 0;
 }
 
-a {
-  background-color: transparent;
-  text-decoration: none;
-}
-a:active,
-a:hover {
-  outline: 0;
-  text-decoration: none;
+article {
+    max-width: 800px;
+    margin: auto;
 }
 
-.well {
+@media print {
+    .nav {
+        display: none;
+    }
+}
+
+.head {
+    font-variant: small-caps;
+    font-size: 1.4em;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+.well, .info-box {
     background-color: #FFF;
     color: #0C0C0C;
     border: none;
@@ -81,4 +97,8 @@ a:hover {
 .btn-default:hover {
     background-color: #346E91;
     color: white;
+}
+
+.end-btns {
+  float: right;
 }
