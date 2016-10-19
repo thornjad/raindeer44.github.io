@@ -57,8 +57,26 @@
             border: none;
             border-radius: 2%;
             max-width: 500px;
-            margin: 3em 6vw;
             padding: 1em;
+            margin: 2em auto;
+        }
+
+        .browser-logo {
+            max-width: 35vw;
+            margin: 2em auto;
+        }
+
+        @media (min-width: 800px) {
+            .browser-logo {
+              float: right;
+              margin: 0 2vw;
+              max-width: 300px;
+            }
+
+            .info-box {
+                float: left;
+                margin: 3em 2vw;
+            }
         }
 
         .info-box div {
@@ -100,23 +118,25 @@
     </nav>
     <div class="container-fluid">
         <article class="setup-opera">
+            <header>
+                <div class="phantom"></div>
 
+                <h1 id="title">Set up Opera for secure browsing</h2>
+                <h3>A guide to setting up the Opera browser for a safe and secure web browsing experience</h3>
 
-            <div class="phantom"></div>
+                <div><img class="browser-logo img-responsive" src="../../assets/images/tutorials/opera-logo.jpg" alt="The Opera browser logo"></div>
+                <div class="info-box">
+                  <h5>
+                      <div><strong><i class="fa fa-clock-o"></i></strong> this will take about 10 mins</div><br>
+                      <div><strong><i class="fa fa-coffee"></i></strong> low difficulty</div><br>
+                      <div><strong><i class="fa fa-money"></i></strong> $0</div><br>
+                  </h5>
+                </div>
 
-            <h1 id="title">Set up Opera for secure browsing</h2>
-        <h3>A guide to setting up the Opera browser for a safe and secure web browsing experience</h3>
-
-        <div class="info-box">
-          <h5>
-              <div><strong><i class="fa fa-clock-o"></i></strong> this will take about 10 mins</div><br>
-              <div><strong><i class="fa fa-coffee"></i></strong> low difficulty</div><br>
-              <div><strong><i class="fa fa-money"></i></strong> $0</div><br>
-          </h5>
-        </div>
+            </header>
 
         <p><b class="head">Opera</b> is a well designed and highly functioning web browser with hundreds of millions of users worldwide, built on the Blink engine from Chromium. Many features now common to all web browsers, such as tabs, private browsing and pop-up blocking,
-            originated by Opera. The simple layout, extensive functionality and built-in VPN service make it a great candidate for browsing the web safely and securely. This tutorial will help you set up the essentials to help keep your personal data
+            originated in Opera. The simple layout, extensive functionality and built-in VPN service make it a great candidate for browsing the web safely and securely. This tutorial will help you set up the essentials to help keep your personal data
             under your control.</p>
 
             <div class="well">
@@ -149,15 +169,15 @@
       </div>
 
 
-        <h3 id="getopera">Get Opera</h3>
+        <h3 class="article-heading" id="getopera">Get Opera</h3>
         <hr>
 
         <p>If you haven't already, <a href="https://www.opera.com/download">download and install Opera</a>. The set up process is very quick, but does require agreement to terms and a privacy policy. I recommend taking a look at the privacy policy to make
             sure you really agree.</p>
 
-        <p>To move through this guide as fast as possible, open the guide (<a href="https://jmthornton.net/tutorials/browsers/opera.html">https://jmthornton.net/tutorials/browsers/opera.html</a>) in Opera after you install it.</p>
+        <p>To move through this guide as fast as possible, open the guide, <a href="https://jmthornton.net/tutorials/browsers/opera.html">https://jmthornton.net/tutorials/browsers/opera.html</a>. in Opera after you install it. (This will make installing extensions faster)</p>
 
-        <h3 id="operasettings">Opera Settings</h3>
+        <h3 class="article-heading" id="operasettings">Opera Settings</h3>
         <hr>
 
         <p>The settings can be easily accessed in any of the following ways:</p>
@@ -209,27 +229,33 @@
 
             <li>VPN: check the box to enable the VPN. <!--TODO<a href="#">What's a VPN?</a>--></li>
 
-            <li>Autofill: uncheck this box.</li>
+            <li>Autofill: uncheck this box. Data used for autofill is stored in the browser where you have little control of it.</li>
 
-            <li>Passwords: uncheck this box. Instead use an independent password manager like <a href="#">LastPass</a> or <a href="#">KeePassX</a>.</li>
+            <li>Passwords: uncheck this box. Instead use an independent password manager like <a href="https://lastpass.com/">LastPass</a> or, even better--but more technical--, <a href="https://www.keepassx.org/">KeePassX</a>.</li>
 
             <li>WebRTC: choose <em>Disable non-proxied UDP</em>. This can stop the built-in VPN from leaking your real IP address.</li>
 
             <li>Cookies: the recommendation here is to choose <em>Allow local data to be set</em>, and check <em>block third-party cookies and site data</em>. Don't worry too much about this one, we'll cover cookie-blocking in just a moment.</li>
         </ol>
 
-        <h3 id="addingmoresecuritywithextensions">Adding more security with extensions</h3>
+        <h3 class="article-heading" id="addingmoresecuritywithextensions">Adding more security with extensions</h3>
         <hr>
 
         <ol>
             <li>Get <a href="https://addons.opera.com/en/extensions/details/https-everywhere/"><em>HTTPS Everywhere</em></a>. This extension forces Opera to get the encrypted version of any website that has one.</li>
 
-            <li>Get <a href="https://addons.opera.com/en/extensions/details/privacy-badger/?display=ru"><em>Privacy Badger</em></a>. Go through the intro page to learn how <em>Privacy Badger works</em>.</li>
+            <li>Get <a href="https://addons.opera.com/en/extensions/details/privacy-badger/?display=ru"><em>Privacy Badger</em></a>. Go through the intro page to learn how <em>Privacy Badger works</em>. This will take care of malicious cookies for you.</li>
         </ol>
 
-        <p>Now, in Opera, go to <a href="opera://extensions/">opera://extensions/</a>. Find <em>HTTPS Everywhere</em> and check the box <em>Allow in private mode</em>. Do the same for <em>Privacy Badger</em>.</p>
+        <p>Now, in Opera, go to your extensions manager:</p>
+              <ul>
+                <li>Menu > Extensions > Manage Extensions</li>
+                <li><kbd>Ctrl + Shift + E</kbd></li>
+              </ul>
 
-        <h3>All done!</h3>
+           <p>Find <em>HTTPS Everywhere</em> and check the box <em>Allow in private mode</em>. Do the same for <em>Privacy Badger</em>.</p>
+
+        <h3 class="article-heading">All done!</h3>
         <hr>
 
         <p>Congratulations! Your Opera browser is now set up to view the web safely and securely. <!--TODO To be any more secure, you'd have to be using Tor --> Happy browsing!</p>

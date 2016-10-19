@@ -21,8 +21,17 @@ body {
 }
 
 article {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
+}
+
+header {
+  display: inline-block;
+}
+
+.article-heading {
+  font-weight: bold;
+  margin-top: 4em;
 }
 
 @media print {
