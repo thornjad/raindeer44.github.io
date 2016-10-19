@@ -38,18 +38,15 @@
         }
 
         .project {
-            margin-top: 2em;
-        }
-
-        .project:hover {
+            margin-top: 20px;
             border: 2px solid #444c53;
             border-top: none;
             border-radius: 3%;
         }
 
-        img:hover {
-            border-radius: 3%;
-            border: 2px solid #444c53;
+        .content img {
+          border-radius: 3%;
+          border: 2px solid #444c53;
         }
     </style>
 </head>
@@ -59,21 +56,15 @@
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
                 <a tabindex="9" class="navbar-brand img-responsive" href="../index.html" id="brand"><img src="../assets/images/icon.svg" /></a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+            <div>
                 <ul class="nav navbar-nav">
                     <li><a tabindex="4" href="../index.html">Home</a></li>
                     <li><a tabindex="5" href="meet.html">Meet</a></li>
-                    <li><a tabindex="6" href="projects.html" class="active">Projects</a></li>
-                    <li><a tabindex="7" href="contact.html">Contact</a></li>
                     <li><a tabindex="8" href="features.html">Features</a></li>
+                    <li><a tabindex="7" href="contact.html" class="lowp">Contact</a></li>
+                    <li><a tabindex="6" href="projects.html" class="active lowp">Projects</a></li>
                     <!--li><a href="https://medium.com/@jade.thornton">Blog</a></li-->
                 </ul>
             </div>
