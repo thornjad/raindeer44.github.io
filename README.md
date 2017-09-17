@@ -1,5 +1,7 @@
 ### You may be looking for [https://github.com/Raindeer44/jmthornton](https://github.com/Raindeer44/jmthornton)
 
-This repository has been the home of Jade Thornton's personal website, which has moved to [https://github.com/Raindeer44/jmthornton](https://github.com/Raindeer44/jmthornton).
+This repository was previously the home of Jade Thornton's personal website, which has moved to <https://github.com/Raindeer44/jmthornton>, and is online at <https://jmthornton.net>.
 
-Coming soon: this repo will become a subdomain of [jmthornton.net](jmthornton.net), hosting projects and select documentation. What this will look like hasn't been figured out yet.
+The site this repo currently powers has several interesting directories, including:
+
+* <http://raindeer44.github.io/_nsrbiz>
